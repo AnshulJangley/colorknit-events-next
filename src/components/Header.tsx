@@ -40,22 +40,17 @@ export default function Header() {
     {
       title: "About Us",
       href: "/about",
-      subItems: [
-        { title: "Our Story", href: "/about#story" },
-        { title: "Why Choose Us", href: "/about#why-us" },
-        { title: "Our Clients", href: "/about#clients" },
-      ],
     },
     {
       title: "Services",
-      href: "/corporate-events",
+      href: "/services",
       subItems: [
         { title: "Corporate Events", href: "/corporate-events" },
-        { title: "Exhibitions", href: "/services#exhibitions" },
-        { title: "Weddings", href: "/services#weddings" },
-        { title: "Corporate Gifting", href: "/services#corporate-gifting" },
-        { title: "Sports", href: "/services#sports" },
-        { title: "MICE", href: "/services#mice" },
+        { title: "Exhibitions", href: "/services/exhibitions" },
+        { title: "Weddings", href: "/services/weddings" },
+        { title: "Corporate Gifting", href: "/services/corporate-gifting" },
+        { title: "Sports", href: "/services/sports" },
+        { title: "MICE", href: "/services/mice" },
       ],
     },
     {
@@ -71,12 +66,13 @@ export default function Header() {
       title: "Blog",
       href: "/blog",
       subItems: [
-        { title: "Event Planning", href: "/blog#event-planning" },
-        { title: "Corporate Events", href: "/blog#corporate-events" },
-        { title: "Exhibitions", href: "/blog#exhibitions" },
-        { title: "Weddings", href: "/blog#weddings" },
-        { title: "Sports", href: "/blog#sports" },
-        { title: "MICE", href: "/blog#mice" },
+        { title: "Corporate Events in Pune", href: "/blog/corporate-event-management-in-pune" },
+        { title: "The Power of Exhibitions", href: "/blog/the-power-of-exhibitions-accelerating-progress" },
+        { title: "Pune's Wedding Market", href: "/blog/punes-wedding-market-innovation-and-tradition" },
+        { title: "Family Day Events Guide", href: "/blog/family-day-event-management-company-pune" },
+        { title: "Trends in Event Technology", href: "/blog/trends-in-event-technology" },
+        { title: "Event Planning: 7 Steps", href: "/blog/how-to-do-successful-event-planning" },
+        { title: "View All 14 Blog Articles", href: "/blog" },
       ],
     },
     {
@@ -102,8 +98,6 @@ export default function Header() {
             {/* Left Tagline (Desktop) */}
             <div className="hidden sm:flex items-center gap-2 text-gray-300 text-[11px] tracking-wider uppercase">
               <span>ColorKnit Events</span>
-              <span className="text-gray-500">•</span>
-              <span className="text-[#ff79cb]">Corporate &amp; MICE Planners</span>
             </div>
 
             {/* Right Quick Links & WhatsApp Button */}
@@ -161,7 +155,7 @@ export default function Header() {
                     <li key={item.title}>
                       <Link
                         href={item.href}
-                        className="hover:text-[#d60b8e] transition-colors py-2 uppercase tracking-wider"
+                        className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
                       >
                         {item.title}
                       </Link>
@@ -173,22 +167,22 @@ export default function Header() {
                   <li key={item.title} className="relative group">
                     <Link
                       href={item.href}
-                      className="hover:text-[#d60b8e] transition-colors flex items-center gap-1 py-4 uppercase tracking-wider group-hover:text-[#d60b8e]"
+                      className="hover:text-[#dc2626] transition-colors flex items-center gap-1 py-4 uppercase tracking-wider group-hover:text-[#dc2626]"
                     >
                       {item.title}
                       <ChevronDown
                         size={14}
-                        className="group-hover:rotate-180 transition-transform duration-200 text-gray-400 group-hover:text-[#d60b8e]"
+                        className="group-hover:rotate-180 transition-transform duration-200 text-gray-400 group-hover:text-[#dc2626]"
                       />
                     </Link>
 
                     {/* Dropdown Menu */}
-                    <div className="absolute left-0 top-full -mt-1 w-56 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+                    <div className="absolute left-0 top-full -mt-1 w-72 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
                       {item.subItems!.map((sub) => (
                         <Link
                           key={sub.title}
                           href={sub.href}
-                          className="block px-4 py-2.5 text-[13px] text-gray-700 hover:text-[#d60b8e] hover:bg-[#fbf4f9] font-medium transition-colors border-b border-gray-50 last:border-b-0"
+                          className="block px-4 py-2.5 text-[13px] text-gray-700 hover:text-[#dc2626] hover:bg-[#fef2f2] font-medium transition-colors border-b border-gray-50 last:border-b-0"
                         >
                           {sub.title}
                         </Link>
@@ -199,35 +193,11 @@ export default function Header() {
               })}
             </ul>
 
-            {/* Desktop Action WhatsApp Button on Navbar */}
-            <div className="hidden lg:flex items-center gap-3">
-              <Link
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-2.5 rounded-md text-[12.5px] font-bold uppercase tracking-wider transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
-              >
-                <WhatsAppIcon className="w-4 h-4 fill-white" />
-                <span>Chat on WhatsApp</span>
-              </Link>
-            </div>
-
-            {/* Mobile Header Controls: Quick WhatsApp & Hamburger Toggle */}
-            <div className="flex items-center gap-2 lg:hidden">
-              <Link
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 bg-[#25D366] text-white px-3 py-1.5 rounded-full text-[12px] font-bold shadow-sm"
-                aria-label="Direct WhatsApp on Mobile"
-              >
-                <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
-                <span>WhatsApp</span>
-              </Link>
-
+            {/* Mobile Header Controls: Hamburger Toggle */}
+            <div className="flex items-center lg:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-gray-700 hover:text-[#d60b8e] focus:outline-none transition-colors"
+                className="p-2 text-gray-700 hover:text-[#dc2626] focus:outline-none transition-colors"
                 aria-label="Toggle Navigation Menu"
               >
                 {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -238,7 +208,7 @@ export default function Header() {
           {/* Mobile Drawer Navigation */}
           {mobileMenuOpen && (
             <div className="lg:hidden mt-3 pt-3 border-t border-gray-100 max-h-[80vh] overflow-y-auto">
-              <ul className="flex flex-col gap-1 pb-4">
+              <ul className="flex flex-col gap-1 pb-2">
                 {menuItems.map((item) => {
                   const hasSubmenu = item.subItems && item.subItems.length > 0;
                   const isSubOpen = openMobileSubmenu === item.title;
@@ -249,7 +219,7 @@ export default function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block px-3 py-2.5 text-[14px] font-bold text-gray-800 hover:text-[#d60b8e] hover:bg-gray-50 rounded uppercase tracking-wider"
+                          className="block px-3 py-2.5 text-[14px] font-bold text-gray-800 hover:text-[#dc2626] hover:bg-gray-50 rounded uppercase tracking-wider"
                         >
                           {item.title}
                         </Link>
@@ -263,20 +233,20 @@ export default function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="text-[14px] font-bold text-gray-800 hover:text-[#d60b8e] uppercase tracking-wider flex-grow"
+                          className="text-[14px] font-bold text-gray-800 hover:text-[#dc2626] uppercase tracking-wider flex-grow"
                         >
                           {item.title}
                         </Link>
                         <button
                           type="button"
                           onClick={() => toggleMobileSubmenu(item.title)}
-                          className="p-2 text-gray-500 hover:text-[#d60b8e]"
+                          className="p-2 text-gray-500 hover:text-[#dc2626]"
                           aria-label={`Toggle ${item.title} subcategories`}
                         >
                           <ChevronDown
                             size={18}
                             className={`transition-transform duration-200 ${
-                              isSubOpen ? "rotate-180 text-[#d60b8e]" : ""
+                              isSubOpen ? "rotate-180 text-[#dc2626]" : ""
                             }`}
                           />
                         </button>
@@ -284,13 +254,13 @@ export default function Header() {
 
                       {/* Mobile Submenu Accordion */}
                       {isSubOpen && (
-                        <div className="pl-6 pr-3 py-1 flex flex-col gap-1 bg-[#faf8fa] rounded-md my-1 border-l-2 border-[#d60b8e]">
+                        <div className="pl-6 pr-3 py-1 flex flex-col gap-1 bg-[#fef2f2] rounded-md my-1 border-l-2 border-[#dc2626]">
                           {item.subItems!.map((sub) => (
                             <Link
                               key={sub.title}
                               href={sub.href}
                               onClick={() => setMobileMenuOpen(false)}
-                              className="py-2 text-[13px] font-medium text-gray-600 hover:text-[#d60b8e] transition-colors"
+                              className="py-2 text-[13px] font-medium text-gray-600 hover:text-[#dc2626] transition-colors"
                             >
                               • {sub.title}
                             </Link>
@@ -301,19 +271,6 @@ export default function Header() {
                   );
                 })}
               </ul>
-
-              {/* Mobile Menu WhatsApp CTA Button */}
-              <div className="pt-3 border-t border-gray-100 px-2 pb-2">
-                <Link
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white py-3 rounded-md text-[13px] font-bold uppercase tracking-wider transition-colors shadow-sm"
-                >
-                  <WhatsAppIcon className="w-4 h-4 fill-white" />
-                  <span>Chat on WhatsApp Directly</span>
-                </Link>
-              </div>
             </div>
           )}
         </nav>

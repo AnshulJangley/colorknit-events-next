@@ -4,6 +4,7 @@ import { Phone, MessageCircle, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GalleryGrid from "@/components/GalleryGrid";
+import PartnerBanner from "@/components/PartnerBanner";
 
 export const metadata = {
   title: "Event Gallery | EMG Showmakerz",
@@ -116,7 +117,7 @@ export default function Gallery() {
             
             {/* Button */}
             <div className="flex justify-center mt-6">
-              <Link href="#" className="bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3 text-[13px] font-bold tracking-wide uppercase transition-colors rounded-[2px] shadow-sm">
+              <Link href="#" className="bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3 text-[13px] font-bold tracking-wide uppercase transition-colors rounded-[2px] shadow-sm">
                 CONTACT US FOR YOUR EVENT REQUIREMENT
               </Link>
             </div>
@@ -124,28 +125,7 @@ export default function Gallery() {
         </section>
 
         {/* Contact Strip Section */}
-        <section className="w-full bg-gradient-to-r from-[#241333] to-[#0f0717] py-14 px-4 border-t border-white/10">
-          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-            <h3 className="text-white text-[16px] md:text-[18px] font-semibold tracking-wide mb-8">
-              Looking For Event Management Company in Delhi, Gurgaon, Noida?
-            </h3>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <Phone size={14} fill="currentColor" />
-                CALL US NOW
-              </Link>
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <MessageCircle size={14} />
-                CHAT ON WHATSAPP
-              </Link>
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <Mail size={14} />
-                ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer 

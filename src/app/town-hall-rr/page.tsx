@@ -4,6 +4,7 @@ import { ArrowRight, Phone, MessageCircle, Mail, Check } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 const townHallFaqs = [
   {
@@ -154,7 +155,7 @@ export default function TownHallRRPage() {
               <div>
                 <Link
                   href="#"
-                  className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
+                  className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
                 >
                   START PLANNING YOUR TOWN HALL MEETING
                   <ArrowRight size={16} strokeWidth={2.5} />
@@ -188,7 +189,7 @@ export default function TownHallRRPage() {
                         href={item.href}
                         className="flex items-center gap-2 text-[12.5px] text-[#555] hover:text-[#008484] font-medium transition-colors py-1 border-b border-gray-50"
                       >
-                        <span className="text-[#d60b8e] font-bold text-[10px]">&#9654;</span>
+                        <span className="text-[#dc2626] font-bold text-[10px]">&#9654;</span>
                         {item.label}
                       </Link>
                     </li>
@@ -218,7 +219,7 @@ export default function TownHallRRPage() {
                         href={item.href}
                         className="flex items-center gap-2 text-[12.5px] text-[#555] hover:text-[#008484] font-medium transition-colors py-1 border-b border-gray-50"
                       >
-                        <span className="text-[#d60b8e] font-bold text-[10px]">&#9654;</span>
+                        <span className="text-[#dc2626] font-bold text-[10px]">&#9654;</span>
                         {item.label}
                       </Link>
                     </li>
@@ -307,7 +308,7 @@ export default function TownHallRRPage() {
               <div>
                 <Link
                   href="#"
-                  className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
+                  className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
                 >
                   PLAN YOUR TOWN HALL EVENT
                   <ArrowRight size={16} strokeWidth={2.5} />
@@ -318,27 +319,7 @@ export default function TownHallRRPage() {
           </div>
         </section>
         {/* Contact Strip */}
-        <section className="w-full bg-gradient-to-r from-[#170a1c] via-[#2a1639] to-[#120815] py-10 px-4">
-          <div className="max-w-4xl mx-auto flex flex-col items-center">
-            <h3 className="text-white text-[18px] md:text-[22px] font-bold mb-6 text-center">
-              Townhall Meetings Planner In Delhi Gurgaon NCR
-            </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="tel:+919811121153" className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-2.5 rounded-sm hover:bg-white hover:text-black transition-colors text-[13px] font-bold uppercase tracking-wider">
-                <Phone size={16} />
-                CALL US NOW
-              </Link>
-              <Link href="#" className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-2.5 rounded-sm hover:bg-white hover:text-black transition-colors text-[13px] font-bold uppercase tracking-wider">
-                <MessageCircle size={16} />
-                CHAT ON WHATSAPP
-              </Link>
-              <Link href="#" className="flex items-center gap-2 bg-transparent border border-white text-white px-6 py-2.5 rounded-sm hover:bg-white hover:text-black transition-colors text-[13px] font-bold uppercase tracking-wider">
-                <Mail size={16} />
-                ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer companyDescription={

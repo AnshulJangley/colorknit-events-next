@@ -21,6 +21,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 export const metadata: Metadata = {
   title: "Corporate Event Management Company in Pune | ColorKnit",
@@ -146,7 +147,7 @@ export default function CorporateEvents() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
 
           <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto text-center mt-4">
-            <span className="inline-block bg-[#d60b8e]/20 border border-[#d60b8e]/40 text-[#ff79cb] text-[12px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block bg-[#dc2626]/20 border border-[#dc2626]/40 text-[#ff6b6b] text-[12px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
               Pune &amp; Across India
             </span>
 
@@ -154,7 +155,7 @@ export default function CorporateEvents() {
               Corporate Event Management Company in Pune
             </h1>
 
-            <div className="w-16 h-[3px] bg-[#d60b8e] mb-6 shadow-sm"></div>
+            <div className="w-16 h-[3px] bg-[#dc2626] mb-6 shadow-sm"></div>
 
             <p className="text-[#f1f1f1] text-[17px] md:text-[20px] font-medium tracking-wide mb-6 max-w-3xl">
               Corporate events planned with purpose, creativity and attention to every detail.
@@ -191,13 +192,13 @@ export default function CorporateEvents() {
         <section className="w-full bg-[#f8f9f8] py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+              <h2 className="font-cinzel text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
                 Four Pillars of Successful Corporate Events
               </h2>
               <h3 className="text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-tight mb-4">
                 The Foundation of Every Successful Corporate Event
               </h3>
-              <div className="w-[60px] h-[3px] bg-[#d60b8e] mx-auto mb-6"></div>
+              <div className="w-[60px] h-[3px] bg-[#dc2626] mx-auto mb-6"></div>
               <p className="text-[#666] text-[15px] max-w-2xl mx-auto leading-relaxed">
                 Every event has a different objective. Our approach brings together the planning, resources and coordination needed to make each occasion work.
               </p>
@@ -213,10 +214,10 @@ export default function CorporateEvents() {
                   >
                     <div>
                       <div className="flex items-center justify-between mb-6">
-                        <span className="text-[#d60b8e] font-black text-[22px] tracking-wider">
+                        <span className="text-[#dc2626] font-black text-[22px] tracking-wider">
                           {pillar.num}
                         </span>
-                        <div className="w-12 h-12 rounded-full bg-[#f8f0f6] flex items-center justify-center text-[#d60b8e] group-hover:bg-[#d60b8e] group-hover:text-white transition-colors duration-300">
+                        <div className="w-12 h-12 rounded-full bg-[#fef2f2] flex items-center justify-center text-[#dc2626] group-hover:bg-[#dc2626] group-hover:text-white transition-colors duration-300">
                           <IconComponent size={22} />
                         </div>
                       </div>
@@ -238,7 +239,7 @@ export default function CorporateEvents() {
         <section id="services" className="w-full bg-[#efedea] py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+              <h2 className="font-cinzel text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
                 Our Specialized Corporate Event Services
               </h2>
               <h3 className="text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-tight mb-4">
@@ -303,13 +304,13 @@ export default function CorporateEvents() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+                <h2 className="font-cinzel text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
                   Proven Experience &amp; Dedication
                 </h2>
                 <h3 className="text-[#2b2b2b] text-[26px] md:text-[34px] font-bold tracking-tight mb-4">
                   Why choose ColorKnit Events?
                 </h3>
-                <div className="w-[50px] h-[3px] bg-[#d60b8e] mb-8"></div>
+                <div className="w-[50px] h-[3px] bg-[#dc2626] mb-8"></div>
 
                 <div className="flex flex-col gap-4 mb-8">
                   {whyChoosePoints.map((point, i) => (
@@ -329,7 +330,7 @@ export default function CorporateEvents() {
 
                 <Link
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-all shadow-md rounded-[3px] tracking-wider hover:shadow-lg"
+                  className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-all shadow-md rounded-[3px] tracking-wider hover:shadow-lg"
                 >
                   Discuss Your Corporate Event
                   <ArrowRight size={15} />
@@ -348,8 +349,8 @@ export default function CorporateEvents() {
                     />
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -left-4 bg-[#170a1c] text-white p-4 rounded shadow-lg max-w-[220px] hidden sm:block border-l-4 border-[#d60b8e]">
-                  <p className="text-[12px] font-bold uppercase tracking-wider text-[#ff79cb] mb-1">
+                <div className="absolute -bottom-4 -left-4 bg-[#170a1c] text-white p-4 rounded shadow-lg max-w-[220px] hidden sm:block border-l-4 border-[#dc2626]">
+                  <p className="text-[12px] font-bold uppercase tracking-wider text-[#ff6b6b] mb-1">
                     On-Site Excellence
                   </p>
                   <p className="text-[11px] text-gray-300 leading-snug">
@@ -364,13 +365,13 @@ export default function CorporateEvents() {
         {/* Let's Plan Your Next Corporate Event Section (CTA block) */}
         <section id="contact" className="w-full bg-gradient-to-r from-[#170a1c] via-[#2a1334] to-[#120815] py-20 px-4 text-white">
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-            <span className="text-[#ff79cb] text-[13px] font-bold tracking-widest uppercase mb-3">
+            <span className="text-[#ff6b6b] text-[13px] font-bold tracking-widest uppercase mb-3">
               Connect With ColorKnit Events
             </span>
             <h2 className="text-white text-[26px] md:text-[36px] font-bold mb-6 tracking-tight">
               Let&apos;s Plan Your Next Corporate Event
             </h2>
-            <div className="w-[50px] h-[3px] bg-[#d60b8e] mb-8"></div>
+            <div className="w-[50px] h-[3px] bg-[#dc2626] mb-8"></div>
             
             <p className="text-[#e2e2e2] text-[15px] md:text-[16px] leading-relaxed mb-4 max-w-2xl">
               Every business event has a purpose, whether it is bringing teams together, appreciating clients, connecting with channel partners or celebrating a company milestone. ColorKnit Events can help you plan the details around that purpose.
@@ -405,7 +406,7 @@ export default function CorporateEvents() {
         <section className="w-full bg-[#e9e6f0] py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-[#847565] text-[13px] md:text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
+              <h2 className="font-cinzel text-[#847565] text-[13px] md:text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
                 Frequently Asked Questions
               </h2>
               <h3 className="text-[#222] text-[22px] md:text-[28px] font-bold tracking-tight mb-4">
@@ -422,38 +423,7 @@ export default function CorporateEvents() {
         </section>
 
         {/* Contact Banner Bar */}
-        <section className="w-full bg-gradient-to-r from-[#281b31] to-[#120a17] py-10 px-4 border-t border-[#3a2845]">
-          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
-            <h3 className="text-white text-[18px] md:text-[20px] font-semibold text-center tracking-wide">
-              Plan Your Next Corporate Event With Pune&apos;s Trusted Experts
-            </h3>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link 
-                href="tel:+919811121153" 
-                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
-              >
-                <Phone size={14} strokeWidth={2.5} /> CALL US NOW
-              </Link>
-              
-              <Link 
-                href="https://wa.me/919811121153" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
-              >
-                <MessageCircle size={14} strokeWidth={2.5} /> CHAT ON WHATSAPP
-              </Link>
-              
-              <Link 
-                href="mailto:contact@colorknit.com" 
-                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
-              >
-                <Mail size={14} strokeWidth={2.5} /> ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer companyDescription={

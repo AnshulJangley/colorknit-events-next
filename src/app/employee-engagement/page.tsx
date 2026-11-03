@@ -4,6 +4,7 @@ import { ArrowRight, ArrowRightCircle, Check, Plus, Phone, MessageCircle, Mail, 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 export const metadata = {
   title: "Employee Engagement Activities | EMG Showmakerz",
@@ -475,28 +476,7 @@ export default function EmployeeEngagement() {
         </section>
 
         {/* Contact Strip Section */}
-        <section className="w-full bg-gradient-to-r from-[#241333] to-[#0f0717] py-14 px-4 border-t border-white/10">
-          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-            <h3 className="text-white text-[16px] md:text-[18px] font-semibold tracking-wide mb-8">
-              We Help Corporates Celebrate Every Moment
-            </h3>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <Phone size={14} fill="currentColor" />
-                CALL US NOW
-              </Link>
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <MessageCircle size={14} />
-                CHAT ON WHATSAPP
-              </Link>
-              <Link href="#" className="inline-flex items-center gap-2 border border-white hover:bg-white/10 text-white px-6 py-2.5 text-[12px] font-bold tracking-wider transition-colors uppercase rounded-[2px]">
-                <Mail size={14} />
-                ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer />

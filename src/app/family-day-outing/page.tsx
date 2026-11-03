@@ -4,6 +4,7 @@ import { ArrowRight, Plus, Phone, MessageCircle, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 const familyDayFaqs = [
   {
@@ -109,7 +110,7 @@ export default function FamilyDayOutingPage() {
 
             {/* CTA Button */}
             <div className="mt-4">
-              <Link href="#" className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
+              <Link href="#" className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
                 GET CUSTOM FAMILY DAY IDEAS
                 <ArrowRight size={18} strokeWidth={2.5} />
               </Link>
@@ -356,7 +357,7 @@ export default function FamilyDayOutingPage() {
                 </p>
               </div>
 
-              <Link href="#" className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
+              <Link href="#" className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
                 PLAN YOUR FAMILY DAY EVENT NOW
                 <ArrowRight size={18} strokeWidth={2.5} />
               </Link>
@@ -391,28 +392,7 @@ export default function FamilyDayOutingPage() {
         </section>
 
         {/* Contact Strip */}
-        <section className="w-full bg-gradient-to-r from-[#2c1b3d] to-[#120815] py-16 px-4">
-          <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-            <h2 className="text-white text-[18px] md:text-[22px] font-bold mb-8">
-              Looking For Family Day Event Management Company In Delhi Gurgaon NCR?
-            </h2>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-[#1a0f1c] transition-colors font-bold text-[12px] uppercase tracking-wider w-full sm:w-auto">
-                <Phone size={16} />
-                CALL US NOW
-              </Link>
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-[#1a0f1c] transition-colors font-bold text-[12px] uppercase tracking-wider w-full sm:w-auto">
-                <MessageCircle size={16} />
-                CHAT ON WHATSAPP
-              </Link>
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-6 py-3 rounded-sm hover:bg-white hover:text-[#1a0f1c] transition-colors font-bold text-[12px] uppercase tracking-wider w-full sm:w-auto">
-                <Mail size={16} />
-                ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer 

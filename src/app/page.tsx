@@ -4,6 +4,7 @@ import { CalendarCheck, Wallet, Sparkles, Presentation, MonitorPlay, Speaker, Pr
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 export default function Home() {
   const images = [
@@ -215,7 +216,7 @@ export default function Home() {
 
         {/* Delivering Creative Section */}
         <section className="bg-white py-24 px-4 text-center">
-          <h2 className="text-[32px] font-bold text-[#1a1a1a] tracking-wide mb-2 uppercase">Delivering Creative</h2>
+          <h2 className="font-cinzel text-[32px] font-bold text-[#1a1a1a] tracking-wide mb-2 uppercase">Delivering Creative</h2>
           <h3 className="text-[20px] font-medium text-[#877568] mb-5">Event Solutions for Leading Companies</h3>
           <div className="w-[55px] h-[3px] bg-[#d39678] mx-auto mb-16"></div>
           
@@ -250,7 +251,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/30"></div>
           
           <div className="relative z-10 w-full">
-            <h2 className="text-2xl font-bold text-white tracking-widest mb-16 uppercase drop-shadow-lg">Latest Event Highlights</h2>
+            <h2 className="font-cinzel text-2xl font-bold text-white tracking-widest mb-16 uppercase drop-shadow-lg">Latest Event Highlights</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto mb-16 px-4">
             {[
@@ -330,7 +331,7 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <section className="bg-[#0c0f12] py-24 px-4 text-center">
-          <h2 className="text-[#3b4c68] text-[32px] font-bold mb-3 tracking-wide">What Our Clients Say</h2>
+          <h2 className="font-cinzel text-[#3b4c68] text-[32px] font-bold mb-3 tracking-wide uppercase">What Our Clients Say</h2>
           <p className="max-w-[700px] mx-auto text-[#6b7280] text-[15px] mb-16">
             Hear what our clients have to say about their experience working with Colorknit for corporate events, conferences, and employee engagement programs.
           </p>
@@ -468,7 +469,7 @@ export default function Home() {
         >
           {/* No color overlay to preserve original photo colors exactly */}
           <div className="relative z-10 w-full">
-            <h2 className="text-[30px] font-bold text-white drop-shadow-lg tracking-wide mb-2">Experienced Corporate Event Management</h2>
+            <h2 className="font-cinzel text-[30px] font-bold text-white drop-shadow-lg tracking-wide mb-2 uppercase">Experienced Corporate Event Management</h2>
             <h3 className="text-[20px] font-medium text-gray-200 drop-shadow-lg mb-4">Company in Pune — Serving Pan India</h3>
             <div className="w-[60px] h-[3px] bg-[#d39678] mx-auto mb-16 shadow-sm"></div>
             
@@ -541,47 +542,10 @@ export default function Home() {
         </section>
 
         {/* CTA Banner Section */}
-        <section 
-          className="relative py-16 px-4 text-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/pexels-steve-29708309.jpg')" }}
-        >
-          {/* Subtle overlay for text readability */}
-          <div className="absolute inset-0 bg-[#0c0f12]/70"></div>
-          
-          <div className="relative z-10">
-            <h2 className="font-cinzel text-xl md:text-[22px] font-medium text-white tracking-wide mb-10">
-              India's Trusted Event Management Company — Headquartered in Pune
-            </h2>
-            
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-4xl mx-auto">
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm">
-                <Phone size={18} fill="currentColor" />
-                CALL US NOW
-              </Link>
-              
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm">
-                <MessageCircle size={18} />
-                CHAT ON WHATSAPP
-              </Link>
-              
-              <Link href="#" className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm">
-                <Mail size={18} fill="currentColor" />
-                LEAVE A QUERY
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner title="Partner With Pune's Trusted Event Management Experts" />
       </main>
 
       <Footer />
-      {/* WhatsApp Floating Button */}
-      <Link 
-        href="#" 
-        className="fixed bottom-4 left-4 w-[55px] h-[55px] bg-[#25d366] hover:bg-[#20b858] text-white rounded-full flex items-center justify-center shadow-lg z-50 transition-colors border-2 border-white"
-        aria-label="Contact us on WhatsApp"
-      >
-        <MessageCircle size={28} fill="currentColor" />
-      </Link>
     </div>
   );
 }

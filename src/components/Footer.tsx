@@ -24,7 +24,7 @@ export default function Footer({ companyDescription }: FooterProps) {
                 </p>
               </>
             )}
-            <Link href="#" className="inline-flex items-center gap-1 bg-[#d60b8e] hover:bg-[#b80879] text-white px-5 py-3 font-bold text-[12px] uppercase transition-colors shadow-sm mt-2">
+            <Link href="#" className="inline-flex items-center gap-1 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-5 py-3 font-bold text-[12px] uppercase transition-colors shadow-sm mt-2">
               REQUEST A CALL BACK
               <ChevronsRight size={16} />
             </Link>
@@ -112,7 +112,7 @@ export default function Footer({ companyDescription }: FooterProps) {
       {/* Scroll to Top Button */}
       <a 
         href="#"
-        className="fixed bottom-[90px] right-[40px] w-[50px] h-[50px] bg-[#f27b13] hover:bg-[#d4680b] text-white rounded-md flex items-center justify-center shadow-lg z-50 transition-colors"
+        className="fixed bottom-6 left-6 w-[50px] h-[50px] bg-[#f27b13] hover:bg-[#d4680b] text-white rounded-md flex items-center justify-center shadow-lg z-50 transition-colors"
         aria-label="Scroll to top"
       >
         <ChevronUp size={28} />

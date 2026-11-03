@@ -4,6 +4,7 @@ import { ArrowRight, Phone, MessageCircle, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
+import PartnerBanner from "@/components/PartnerBanner";
 
 const annualDayFaqs = [
   {
@@ -206,7 +207,7 @@ export default function AnnualDayGalaEventsPage() {
             {/* CTA Button */}
             <Link 
               href="#" 
-              className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
+              className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
             >
               VIEW ANNUAL DAY EVENTS GALLERY
               <ArrowRight size={18} strokeWidth={2.5} />
@@ -327,7 +328,7 @@ export default function AnnualDayGalaEventsPage() {
               
               <Link 
                 href="#" 
-                className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
+                className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
               >
                 PLAN YOUR ANNUAL DAY
                 <ArrowRight size={18} strokeWidth={2.5} />
@@ -409,37 +410,7 @@ export default function AnnualDayGalaEventsPage() {
         </section>
 
         {/* Contact Strip Section */}
-        <section className="w-full bg-[#1a0f1c] bg-gradient-to-r from-[#170a1c] to-[#120815] py-16 px-4 border-t border-white/5">
-          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-            <h2 className="text-white text-[16px] md:text-[18px] font-bold tracking-wide mb-8">
-              Our Corporate Annual Day Events Are Engaging & Inspiring
-            </h2>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-              <Link 
-                href="#" 
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/50 bg-transparent text-white px-6 py-3 font-bold text-[11px] md:text-[12px] uppercase transition-colors rounded-[3px] tracking-wider w-full sm:w-auto min-w-[200px]"
-              >
-                <Phone size={14} />
-                CALL US NOW
-              </Link>
-              <Link 
-                href="#" 
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/50 bg-transparent text-white px-6 py-3 font-bold text-[11px] md:text-[12px] uppercase transition-colors rounded-[3px] tracking-wider w-full sm:w-auto min-w-[200px]"
-              >
-                <MessageCircle size={14} />
-                CHAT ON WHATSAPP
-              </Link>
-              <Link 
-                href="#" 
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/50 bg-transparent text-white px-6 py-3 font-bold text-[11px] md:text-[12px] uppercase transition-colors rounded-[3px] tracking-wider w-full sm:w-auto min-w-[200px]"
-              >
-                <Mail size={14} />
-                ENQUIRY FORM
-              </Link>
-            </div>
-          </div>
-        </section>
+        <PartnerBanner />
       </main>
 
       <Footer 
