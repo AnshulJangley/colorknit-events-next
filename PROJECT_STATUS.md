@@ -28,7 +28,7 @@ We are actively building out the page layouts based on provided UI screenshots, 
 
 ### 🧩 Reusable Components Created
 All components are located in `src/components/`:
-- **`Header.tsx`**: Standard global navigation.
+- **`Header.tsx`**: Standard global navigation. Includes the full responsive menu structure (Home, About Us, Services, Our Work, Blog, Contact Us) with desktop hover dropdowns, mobile accordion drawer, top-bar WhatsApp buttons (desktop & mobile), and a fixed floating on-screen WhatsApp action button.
 - **`Footer.tsx`**: Global footer. It now accepts a `companyDescription` prop to allow page-specific SEO descriptions.
 - **`FaqAccordion.tsx`**: A reusable dropdown accordion for FAQs. Accepts a `faqs` array prop containing `{ question, answer }` objects.
 
