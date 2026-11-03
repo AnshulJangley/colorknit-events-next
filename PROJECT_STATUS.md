@@ -7,8 +7,17 @@ We are actively building out the page layouts based on provided UI screenshots, 
 
 ### ✅ Pages Completed
 1. **`/corporate-events`**
-   - Main corporate events landing page.
-   - Includes hero, services grid, FAQ, and contact strip.
+   - Focus Keyword: **Corporate Event Management Company in Pune**
+   - Meta Title: *Corporate Event Management Company in Pune | ColorKnit*
+   - Meta Description: *ColorKnit Events is a corporate event management company in Pune, planning conferences, dealer meets, annual events, client engagements and corporate celebrations.*
+   - Sections:
+     - Hero with dual CTAs ("Plan Your Corporate Event" & "Explore Our Services") and brand intro.
+     - Four Pillars of Successful Corporate Events (`01 STRATEGY`, `02 BUDGET`, `03 VENUE`, `04 EXECUTION`).
+     - Specialized Corporate Event Services (Dealer/Distributor Meets, Client Engagement, Corporate Annual Events, Rewards & Recognition, Business Meetings & Town Halls, Product Launches & Announcements).
+     - Why Choose ColorKnit Events checklist + stage/venue photo.
+     - "Let's Plan Your Next Corporate Event" CTA banner with email & WhatsApp copy actions.
+     - 4 tailored FAQs for corporate event management in Pune.
+     - Quick contact strip & customized footer description for ColorKnit Pune.
 2. **`/annual-day-gala-events`**
    - Annual Day & Gala events page.
    - Features statistics counter layout, 3-row offerings layout, and inspiration image grid.

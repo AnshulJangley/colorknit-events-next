@@ -1,457 +1,402 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Check, Plus, Phone, MessageCircle, Mail } from "lucide-react";
+import { 
+  ArrowRight, 
+  Check, 
+  Phone, 
+  MessageCircle, 
+  Mail, 
+  Compass, 
+  PiggyBank, 
+  MapPin, 
+  Wrench, 
+  Users, 
+  Sparkles, 
+  CalendarCheck, 
+  Award, 
+  Briefcase, 
+  Megaphone 
+} from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
 
+export const metadata: Metadata = {
+  title: "Corporate Event Management Company in Pune | ColorKnit",
+  description:
+    "ColorKnit Events is a corporate event management company in Pune, planning conferences, dealer meets, annual events, client engagements and corporate celebrations.",
+};
+
 export default function CorporateEvents() {
+  const pillars = [
+    {
+      num: "01",
+      title: "STRATEGY",
+      icon: Compass,
+      desc: "We begin by understanding your event objective, audience, key messages and expected outcomes.",
+    },
+    {
+      num: "02",
+      title: "BUDGET",
+      icon: PiggyBank,
+      desc: "We align the event plan with your budget, helping prioritize the elements that matter most to your guests and business.",
+    },
+    {
+      num: "03",
+      title: "VENUE",
+      icon: MapPin,
+      desc: "We help identify a suitable venue based on the event format, location, capacity, facilities and overall experience you want to create.",
+    },
+    {
+      num: "04",
+      title: "EXECUTION",
+      icon: Wrench,
+      desc: "We coordinate the event team, vendors, production and on-site requirements to keep the programme organized and on schedule.",
+    },
+  ];
+
+  const services = [
+    {
+      title: "Dealer and Distributor Meets",
+      desc: "Bring your channel partners together for business updates, product discussions, sales planning and relationship-building. We coordinate the event format, venue, branding and programme flow around your objectives.",
+      image: "/images/photo3.jpg",
+      icon: Users,
+      link: "#",
+    },
+    {
+      title: "Client Engagement Events",
+      desc: "From professional gatherings to appreciation events, we help shape an environment that encourages interaction and strengthens business relationships.",
+      image: "/images/photo1.jpg",
+      icon: Sparkles,
+      link: "#",
+    },
+    {
+      title: "Corporate Annual Events",
+      desc: "We coordinate the event concept, stage, production and programme requirements to suit your organization’s culture and scale.",
+      image: "/images/photo8.jpg",
+      icon: CalendarCheck,
+      link: "/annual-day-gala-events",
+    },
+    {
+      title: "Rewards and Recognition Events",
+      desc: "Give employee achievements the recognition they deserve. We help organize award ceremonies, appreciation programmes and recognition events with a well-coordinated guest experience.",
+      image: "/images/photo7.jpg",
+      icon: Award,
+      link: "/town-hall-rr",
+    },
+    {
+      title: "Business Meetings & Town Halls",
+      desc: "Support leadership communication, business updates and team alignment with organized meetings and town halls. We coordinate venue arrangements, audiovisual requirements, seating and the running order.",
+      image: "/images/photo2.jpg",
+      icon: Briefcase,
+      link: "/town-hall-rr",
+    },
+    {
+      title: "Product Launches & Announcements",
+      desc: "With coordinated and meticulously planned details we help introduce a product, service or business initiative through coordinated venue planning, stage setup, branding, audiovisual production and event-day coordination.",
+      image: "/images/photo4.jpg",
+      icon: Megaphone,
+      link: "#",
+    },
+  ];
+
+  const whyChoosePoints = [
+    "Planning Around Your Requirements",
+    "Creative Concepts With Your Brand in Mind",
+    "Coordination Across Event Elements",
+    "A Structured Approach From Start to Finish",
+    "Flexible Solutions for Different Event Formats",
+  ];
+
+  const faqs = [
+    {
+      question: "What does a corporate event management company in Pune do?",
+      answer:
+        "A corporate event management company helps businesses plan and coordinate events such as conferences, dealer meets, annual functions, client engagement programmes, town halls and employee recognition events. Services can include planning, venue selection, branding, audiovisual production, hospitality, vendor coordination and on-site execution.",
+    },
+    {
+      question: "How early should we book a corporate event planner?",
+      answer:
+        "It is useful to begin planning as early as possible, particularly for large conferences, annual events or programmes requiring complex production and guest arrangements. The ideal timeline depends on your event date, venue availability, attendance and scope.",
+    },
+    {
+      question: "Do you help with venue selection and event production?",
+      answer:
+        "Venue planning and event production are part of the service areas described on this page. Depending on the agreed scope, arrangements may include venue coordination, stage setup, branding, sound, lighting, screens and related technical requirements.",
+    },
+    {
+      question: "How can we request a corporate event proposal?",
+      answer:
+        "Contact ColorKnit Events with your event type, preferred date, location, estimated number of attendees and budget range. This information helps the team understand your requirements and discuss the next steps.",
+    },
+  ];
+
   return (
     <>
       <Header />
-      
+
       <main className="w-full flex-grow">
         {/* Hero Section */}
         <section 
-          className="relative flex flex-col items-center justify-center py-32 px-4 bg-cover bg-center bg-no-repeat min-h-[550px]"
-          style={{ backgroundImage: "url('/images/pexels-enginakyurt-14827102.jpg')" }}
+          className="relative flex flex-col items-center justify-center py-24 md:py-32 px-4 bg-cover bg-center bg-no-repeat min-h-[580px]"
+          style={{ backgroundImage: "url('/images/photo5.jpg')" }}
         >
-          {/* No overlay to preserve the exact red color of the photo */}
-          <div className="absolute inset-0 bg-black/10"></div>
-          
-          <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto text-center mt-8">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-[40px] font-bold tracking-wide uppercase mb-6 drop-shadow-md">
-              WHAT ARE CORPORATE EVENTS & PLANNERS
+          {/* Subtle dark overlay for contrast while preserving event stage ambiance */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/90"></div>
+
+          <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto text-center mt-4">
+            <span className="inline-block bg-[#d60b8e]/20 border border-[#d60b8e]/40 text-[#ff79cb] text-[12px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+              Pune &amp; Across India
+            </span>
+
+            <h1 className="text-white text-3xl md:text-5xl lg:text-[46px] font-extrabold tracking-tight mb-4 drop-shadow-md max-w-4xl leading-tight">
+              Corporate Event Management Company in Pune
             </h1>
-            
-            <div className="w-12 h-[3px] bg-[#d94a28] mb-12 shadow-sm"></div>
-            
-            <div className="bg-[#361e27] border border-white/5 px-12 py-[18px] rounded-[5px] mb-12 shadow-md">
-              <p className="text-white text-[15px] font-medium tracking-wide">
-                A comprehensive guide to business events and meeting planning
-              </p>
-            </div>
-            
-            <Link 
-              href="#" 
-              className="inline-block bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
-            >
-              TALK TO YOUR EVENT PLANNER
-            </Link>
-          </div>
-        </section>
 
-        {/* Gray Info Strip */}
-        <section className="w-full bg-[#e3e2e0] py-[22px] px-4 shadow-inner">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-[#4b5258] text-[18px] md:text-[20px] font-bold tracking-wide">
-              Understanding Corporate Events & Their Role in Business Growth
-            </h2>
-          </div>
-        </section>
+            <div className="w-16 h-[3px] bg-[#d60b8e] mb-6 shadow-sm"></div>
 
-        {/* Delivering Impactful Section */}
-        <section className="w-full bg-[#f8f9f8] py-16 px-4">
-          <div className="max-w-6xl mx-auto">
-            {/* Headers */}
-            <div className="text-center mb-14">
-              <h2 className="text-[#2b2b2b] text-[22px] md:text-[26px] font-bold tracking-[0.15em] uppercase mb-2">
-                DELIVERING IMPACTFUL
-              </h2>
-              <h3 className="text-[#847565] text-[18px] md:text-[20px] font-semibold tracking-wide mb-6">
-                Corporate Event Experiences
-              </h3>
-              <div className="w-[60px] h-[3px] bg-[#a88f78] mx-auto"></div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-              {/* Text Column */}
-              <div className="text-[#555] text-[14.5px] leading-[1.8] flex flex-col gap-6 pt-2">
-                <h4 className="text-[#008484] text-[19px] font-bold mb-1 tracking-tight">
-                  What Are Corporate Events & Why Do They Matter?
-                </h4>
-                
-                <p>
-                  <strong className="text-[#333]">Corporate events</strong> are professionally planned business gatherings designed to achieve specific organizational goals such as employee engagement, brand promotion, knowledge sharing, and relationship building.
-                </p>
-                
-                <p>
-                  These events include a wide range of formats such as <Link href="#" className="text-[#008484] hover:underline font-semibold">Leadership Conferences</Link>, product launches, annual celebrations, and team engagement activities—each contributing to business growth and organizational culture.
-                </p>
-                
-                <p>
-                  Understanding different types of corporate events and effective <strong className="text-[#333]">corporate event planning</strong> strategies helps businesses create more impactful and engaging experiences.
-                </p>
-                
-                <p>
-                  Corporate events play a crucial role in strengthening brand presence, improving employee engagement, and driving long-term business growth.
-                </p>
-                
-                <p>
-                  From small internal gatherings to <strong className="text-[#333]">large-scale corporate event ideas</strong> and executions, businesses use events as a powerful tool for engagement and brand building.
-                </p>
-              </div>
-
-              {/* Image Column */}
-              <div className="relative p-2 border-[8px] border-[#e2d5c8] bg-[#f8f9f8] rounded-sm shadow-md mx-auto w-full max-w-[400px]">
-                <div className="relative w-full aspect-[4/5] md:aspect-[3/4]">
-                  <Image 
-                    src="/images/photo1.jpg" 
-                    alt="Corporate Event Experiences"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Separator */}
-            <hr className="my-16 border-t border-gray-300" />
-
-            {/* Professional Event Planners Block */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-              {/* Image Column */}
-              <div className="relative p-2 border-[8px] border-[#e2d5c8] bg-[#f8f9f8] rounded-sm shadow-md mx-auto w-full max-w-[400px]">
-                <div className="relative w-full aspect-[4/5] md:aspect-[3/4]">
-                  <Image 
-                    src="/images/photo2.jpg" 
-                    alt="Professional Event Planners"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Text Column */}
-              <div className="text-[#555] text-[14.5px] leading-[1.8] flex flex-col gap-6 pt-2">
-                <h4 className="text-[#008484] text-[19px] font-bold mb-1 tracking-tight">
-                  Who Are Professional Event Planners?
-                </h4>
-                
-                <p>
-                  <strong className="text-[#333]">Corporate event planners</strong> are professionals and companies who specialize in conceptualizing, organizing, and executing business events with precision and creativity. They manage everything from initial ideation and strategic planning to logistics, vendor coordination, production, and on-ground execution.
-                </p>
-                
-                <p>
-                  Their role goes beyond basic event coordination—they align every element of the event with the organization's objectives, ensuring a seamless and engaging experience for attendees. From small internal meetings to large-scale corporate events, planners bring structure, innovation, and efficiency to every stage of execution.
-                </p>
-                
-                <p>
-                  With a deep understanding of event dynamics, audience engagement, and operational challenges, corporate event planners help transform ideas into impactful and well-executed <strong className="text-[#333]">business events</strong> that deliver measurable results.
-                </p>
-                
-                <p>
-                  They also ensure that every event reflects the brand identity while creating meaningful experiences for employees, clients, and stakeholders.
-                </p>
-              </div>
-            </div>
-            
-            {/* Separator */}
-            <hr className="my-16 border-t border-gray-300" />
-
-            {/* Planners Handle / Hire Block */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start pb-10">
-              {/* Text Column */}
-              <div className="text-[#555] text-[14.5px] leading-[1.8] flex flex-col gap-6 pt-2">
-                <div>
-                  <h4 className="text-[#008484] text-[19px] font-bold mb-3 tracking-tight">
-                    What Do Corporate Event Planners Handle?
-                  </h4>
-                  <p>
-                    A professional <strong className="text-[#333]">corporate event planner</strong> typically manages venue selection, event design, budgeting, vendor management, event production, entertainment, guest experience, and real-time coordination during the event. Their structured approach ensures that every detail is planned and executed flawlessly.
-                  </p>
-                </div>
-                
-                <div className="mt-2">
-                  <h4 className="text-[#008484] text-[19px] font-bold mb-3 tracking-tight">
-                    Why Hire a Corporate Event Planner?
-                  </h4>
-                  <p>
-                    Working with <Link href="#" className="text-[#008484] hover:underline font-semibold">professional event planners</Link> ensures better planning, efficient execution, and high-quality event experiences aligned with business goals. Their expertise helps avoid common challenges, optimize budgets, and deliver events that are both impactful and professionally managed.
-                  </p>
-                </div>
-              </div>
-
-              {/* Image Column */}
-              <div className="relative p-2 border-[8px] border-[#e2d5c8] bg-[#f8f9f8] rounded-sm shadow-md mx-auto w-full max-w-[400px]">
-                <div className="relative w-full aspect-square">
-                  <Image 
-                    src="/images/photo3.jpg" 
-                    alt="Event Planner Coordinating"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* How to Choose Section */}
-        <section className="w-full bg-[#efedea] py-16 px-4 shadow-inner">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Headers */}
-            <div className="mb-10">
-              <h2 className="text-[#333] text-[20px] md:text-[24px] font-bold tracking-[0.1em] uppercase mb-2">
-                HOW TO CHOOSE THE RIGHT
-              </h2>
-              <h3 className="text-[#847565] text-[18px] md:text-[20px] font-medium tracking-wide mb-5">
-                Corporate Event Management Company in Delhi NCR
-              </h3>
-              <div className="w-[50px] h-[2px] bg-[#a88f78] mx-auto"></div>
-            </div>
-
-            {/* Text Content */}
-            <div className="text-[#555] text-[14.5px] leading-[1.8] flex flex-col gap-6 mb-12 px-4 md:px-12">
-              <p>
-                <Link href="#" className="text-[#64504a] underline hover:text-[#008484] transition-colors font-semibold">Choosing the right corporate event management company</Link> is a crucial decision that directly impacts the success of your <strong className="text-[#333]">business event</strong>. The right partner not only manages execution but also brings strategic thinking, creativity, and operational excellence to the table.
-              </p>
-              
-              <p>
-                Key factors to consider include industry experience, understanding of corporate objectives, creativity in event design, a strong vendor network, and the ability to execute events seamlessly across different scales and formats.
-              </p>
-              
-              <p>
-                With over <strong className="text-[#333]">18 years of experience</strong> and successfully executing <strong className="text-[#333]">3,600+ corporate events</strong>, we bring proven expertise in planning and delivering impactful business events across Delhi NCR and India.
-              </p>
-            </div>
-
-            {/* Button */}
-            <Link 
-              href="#"
-              className="inline-block bg-[#00a8a8] hover:bg-[#008f8f] text-white font-bold text-[13px] px-8 py-4 rounded-[2px] uppercase tracking-wider transition-colors shadow-md"
-            >
-              EXPLORE CORPORATE EVENT SERVICES
-            </Link>
-          </div>
-        </section>
-
-        {/* End-to-End Services Section */}
-        <section className="w-full bg-[#f8f9f8] py-20 px-4">
-          <div className="max-w-6xl mx-auto">
-            {/* Headers */}
-            <div className="text-center mb-14">
-              <h2 className="text-[#2b2b2b] text-[22px] md:text-[26px] font-bold tracking-[0.15em] uppercase mb-2">
-                END-TO-END
-              </h2>
-              <h3 className="text-[#847565] text-[18px] md:text-[20px] font-medium tracking-wide mb-6">
-                Corporate Events Planning & Management Services
-              </h3>
-              <div className="w-[60px] h-[3px] bg-[#a88f78] mx-auto"></div>
-            </div>
-
-            {/* Services Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 px-4">
-              {/* Item 1 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo1.jpg" alt="Leadership Conference" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Leadership Conference <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 2 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo2.jpg" alt="Product Launch Events" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Product Launch Events <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 3 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo3.jpg" alt="Dealer Meet Events" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Dealer Meet Events <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 4 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo4.jpg" alt="Employee Engagement Events" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Employee Engagement Events <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 5 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo5.jpg" alt="Inauguration Ceremony" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Inauguration Ceremony <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 6 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo6.jpg" alt="Event Branding" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Event Branding <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 7 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo7.jpg" alt="Gala Dinner Events" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Gala Dinner Events <ArrowRight size={14} />
-                </h4>
-              </div>
-
-              {/* Item 8 */}
-              <div className="flex flex-col items-center group cursor-pointer">
-                <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                  <Image src="/images/photo8.jpg" alt="Annual Day Celebration" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h4 className="text-[#00a8a8] text-[13px] font-semibold flex items-center gap-1 group-hover:text-[#008f8f] transition-colors tracking-wide">
-                  Annual Day Celebration <ArrowRight size={14} />
-                </h4>
-              </div>
-            </div>
-
-
-            {/* Company Overview Sub-section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mt-20 pt-10 border-t border-[#e5e5e5]">
-              {/* Text Column */}
-              <div className="text-[#555] text-[14.5px] leading-[1.8] flex flex-col gap-6">
-                <p>
-                  We are a leading <Link href="#" className="text-[#008484] hover:underline font-semibold">event management company</Link> delivering high-impact corporate and business events across Delhi NCR and India. With 18+ years of experience, we specialize in planning and executing conferences, product launches, dealer meets, and employee engagement events.
-                </p>
-                
-                <p>
-                  Our approach focuses on understanding your brand, audience, and objectives to design tailored event experiences. As experienced <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate event planners</Link>, we manage everything from venue selection and creative concepts to production and on-ground execution.
-                </p>
-                
-                <p>
-                  We blend creative vision with technical precision and seamless execution, designing immersive, goal-driven event experiences tailored to fit your brand identity and budget lines perfectly.
-                </p>
-              </div>
-
-              {/* Image Column */}
-              <div className="relative p-2 border-[8px] border-[#e2d5c8] bg-[#f8f9f8] rounded-sm shadow-md mx-auto w-full max-w-[450px]">
-                <div className="relative w-full aspect-[4/3]">
-                  <Image 
-                    src="/images/photo4.jpg" 
-                    alt="Event Management Experience"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section className="w-full bg-[#17131b] py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-            <h2 className="text-white text-[22px] md:text-[26px] font-bold mb-6 tracking-wide">
-              Hire A Professional Event Planner For Your Upcoming Event
-            </h2>
-            
-            <p className="text-[#d8d8d8] text-[13.5px] md:text-[14.5px] leading-relaxed mb-10 max-w-3xl">
-              Hiring professional event managers offers several advantages. By handling complexities behind the scenes, experienced corporate event planners enable organizations to focus entirely on networking, stakeholder engagement, and achieving their desired outcomes.
+            <p className="text-[#f1f1f1] text-[17px] md:text-[20px] font-medium tracking-wide mb-6 max-w-3xl">
+              Corporate events planned with purpose, creativity and attention to every detail.
             </p>
-            
-            <Link 
-              href="#"
-              className="inline-block bg-[#00a8a8] hover:bg-[#008f8f] text-white font-bold text-[13px] px-8 py-4 rounded-[2px] uppercase tracking-wider transition-colors shadow-md"
-            >
-              CONTACT FOR FREE QUOTE
-            </Link>
+
+            <div className="bg-white/10 backdrop-blur-sm border border-white/15 px-6 md:px-10 py-6 rounded-lg mb-8 max-w-3xl text-left md:text-center text-[#e2e2e2] text-[14.5px] leading-relaxed shadow-lg">
+              <p className="mb-3">
+                At <strong className="text-white font-semibold">ColorKnit Events</strong>, we bring people, ideas and businesses together through thoughtfully planned corporate experiences. As a corporate event management company in Pune, we help businesses organize events that reflect their brand, engage their audience and run smoothly from the first discussion to the final wrap-up.
+              </p>
+              <p>
+                From MICE events and dealer meets to annual celebrations, client engagement programmes and employee recognition events, we coordinate the essential details so your team can focus on the people and purpose behind the occasion.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link 
+                href="#contact" 
+                className="inline-flex items-center gap-2 bg-[#008484] hover:bg-[#006e6e] text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase shadow-md rounded-[3px] hover:shadow-lg hover:-translate-y-0.5"
+              >
+                Plan Your Corporate Event
+                <ArrowRight size={16} />
+              </Link>
+              <Link 
+                href="#services" 
+                className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase rounded-[3px]"
+              >
+                Explore Our Services
+              </Link>
+            </div>
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
+        {/* Four Pillars Section */}
         <section className="w-full bg-[#f8f9f8] py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            {/* Headers */}
-            <div className="text-center mb-14">
-              <h2 className="text-[#2b2b2b] text-[22px] md:text-[26px] font-bold tracking-[0.15em] uppercase mb-2">
-                WHY CHOOSE SHOWMAKERZ
+            <div className="text-center mb-16">
+              <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+                Four Pillars of Successful Corporate Events
               </h2>
-              <h3 className="text-[#847565] text-[18px] md:text-[20px] font-medium tracking-wide mb-6">
-                For Your Events?
+              <h3 className="text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-tight mb-4">
+                The Foundation of Every Successful Corporate Event
               </h3>
-              <div className="w-[60px] h-[3px] bg-[#a88f78] mx-auto"></div>
+              <div className="w-[60px] h-[3px] bg-[#d60b8e] mx-auto mb-6"></div>
+              <p className="text-[#666] text-[15px] max-w-2xl mx-auto leading-relaxed">
+                Every event has a different objective. Our approach brings together the planning, resources and coordination needed to make each occasion work.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-              {/* Features List */}
-              <div className="flex flex-col gap-5">
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">End-to-End Event Solutions</strong> including planning, production, branding, and execution.
-                  </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {pillars.map((pillar) => {
+                const IconComponent = pillar.icon;
+                return (
+                  <div 
+                    key={pillar.num}
+                    className="bg-white rounded-lg p-7 border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-6">
+                        <span className="text-[#d60b8e] font-black text-[22px] tracking-wider">
+                          {pillar.num}
+                        </span>
+                        <div className="w-12 h-12 rounded-full bg-[#f8f0f6] flex items-center justify-center text-[#d60b8e] group-hover:bg-[#d60b8e] group-hover:text-white transition-colors duration-300">
+                          <IconComponent size={22} />
+                        </div>
+                      </div>
+                      <h4 className="text-[#2b2b2b] text-[17px] font-bold tracking-wider mb-3">
+                        {pillar.title}
+                      </h4>
+                      <p className="text-[#555] text-[14px] leading-relaxed">
+                        {pillar.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Specialized Corporate Event Services */}
+        <section id="services" className="w-full bg-[#efedea] py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+                Our Specialized Corporate Event Services
+              </h2>
+              <h3 className="text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-tight mb-4">
+                Corporate Events We Plan and Manage
+              </h3>
+              <div className="w-[60px] h-[3px] bg-[#008484] mx-auto mb-6"></div>
+              <p className="text-[#666] text-[15px] max-w-2xl mx-auto leading-relaxed">
+                Tailored solutions engineered around your brand vision, attendee profiles, and specific operational deliverables.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div 
+                    key={index} 
+                    className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group border border-gray-100"
+                  >
+                    <div className="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                      <Image 
+                        src={item.image} 
+                        alt={item.title} 
+                        fill 
+                        className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                      />
+                      <div className="absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#008484] shadow-sm">
+                        <Icon size={18} />
+                      </div>
+                    </div>
+                    <div className="p-6 flex flex-col flex-grow justify-between">
+                      <div>
+                        <h4 className="text-[#222] text-[18px] font-bold mb-3 group-hover:text-[#008484] transition-colors">
+                          {item.title}
+                        </h4>
+                        <p className="text-[#555] text-[13.5px] leading-relaxed mb-6">
+                          {item.desc}
+                        </p>
+                      </div>
+                      {item.link !== "#" ? (
+                        <Link 
+                          href={item.link} 
+                          className="inline-flex items-center gap-1.5 text-[12.5px] font-bold text-[#008484] hover:text-[#006666] uppercase tracking-wider transition-colors pt-2 border-t border-gray-100"
+                        >
+                          View Details <ArrowRight size={14} />
+                        </Link>
+                      ) : (
+                        <div className="inline-flex items-center gap-1.5 text-[12.5px] font-bold text-[#847565] uppercase tracking-wider pt-2 border-t border-gray-100">
+                          Custom Solution <ArrowRight size={14} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose ColorKnit Events Section */}
+        <section className="w-full bg-[#f8f9f8] py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div>
+                <h2 className="text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
+                  Proven Experience &amp; Dedication
+                </h2>
+                <h3 className="text-[#2b2b2b] text-[26px] md:text-[34px] font-bold tracking-tight mb-4">
+                  Why choose ColorKnit Events?
+                </h3>
+                <div className="w-[50px] h-[3px] bg-[#d60b8e] mb-8"></div>
+
+                <div className="flex flex-col gap-4 mb-8">
+                  {whyChoosePoints.map((point, i) => (
+                    <div 
+                      key={i} 
+                      className="flex items-center gap-3.5 bg-white p-4 rounded-md border border-gray-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)]"
+                    >
+                      <div className="w-6 h-6 rounded-full bg-[#e8f5e9] flex items-center justify-center shrink-0">
+                        <Check className="text-[#2e7d32]" size={15} strokeWidth={3} />
+                      </div>
+                      <span className="text-[#333] text-[14.5px] font-semibold">
+                        {point}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Creative & Customized Concepts</strong> aligned with your business objectives.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Experienced Production Team</strong> for seamless on-ground coordination.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Strong Vendor Network</strong> for venues, artists, décor, AV, and hospitality.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Pan India Execution Capability</strong> with reliable event delivery across major cities.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Focus on ROI & Engagement</strong> to create impactful business experiences.
-                  </p>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Check className="text-[#4caf50] mt-1 shrink-0" size={18} strokeWidth={3} />
-                  <p className="text-[#555] text-[14.5px] leading-relaxed">
-                    <strong className="text-[#333]">Trusted by Leading Brands</strong> for conferences, launches, annual days, and employee engagement events.
-                  </p>
-                </div>
+
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-2 bg-[#d60b8e] hover:bg-[#b80879] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-all shadow-md rounded-[3px] tracking-wider hover:shadow-lg"
+                >
+                  Discuss Your Corporate Event
+                  <ArrowRight size={15} />
+                </Link>
               </div>
 
-              {/* Image */}
-              <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden shadow-xl mx-auto max-w-[500px]">
-                <Image 
-                  src="/images/photo5.jpg" 
-                  alt="Golden Jubilee Event Stage"
-                  fill
-                  className="object-cover"
-                />
+              {/* Event Photograph */}
+              <div className="relative">
+                <div className="relative p-2.5 border-[8px] border-[#e2d5c8] bg-white rounded-lg shadow-xl mx-auto w-full max-w-[500px]">
+                  <div className="relative w-full aspect-[4/3] rounded overflow-hidden">
+                    <Image 
+                      src="/images/photo5.jpg" 
+                      alt="Actual ColorKnit corporate event stage setup and audience" 
+                      fill 
+                      className="object-cover" 
+                    />
+                  </div>
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-[#170a1c] text-white p-4 rounded shadow-lg max-w-[220px] hidden sm:block border-l-4 border-[#d60b8e]">
+                  <p className="text-[12px] font-bold uppercase tracking-wider text-[#ff79cb] mb-1">
+                    On-Site Excellence
+                  </p>
+                  <p className="text-[11px] text-gray-300 leading-snug">
+                    Turnkey staging, production &amp; audience engagement in Pune.
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Let's Plan Your Next Corporate Event Section (CTA block) */}
+        <section id="contact" className="w-full bg-gradient-to-r from-[#170a1c] via-[#2a1334] to-[#120815] py-20 px-4 text-white">
+          <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+            <span className="text-[#ff79cb] text-[13px] font-bold tracking-widest uppercase mb-3">
+              Connect With ColorKnit Events
+            </span>
+            <h2 className="text-white text-[26px] md:text-[36px] font-bold mb-6 tracking-tight">
+              Let&apos;s Plan Your Next Corporate Event
+            </h2>
+            <div className="w-[50px] h-[3px] bg-[#d60b8e] mb-8"></div>
+            
+            <p className="text-[#e2e2e2] text-[15px] md:text-[16px] leading-relaxed mb-4 max-w-2xl">
+              Every business event has a purpose, whether it is bringing teams together, appreciating clients, connecting with channel partners or celebrating a company milestone. ColorKnit Events can help you plan the details around that purpose.
+            </p>
+            <p className="text-[#c7c7c7] text-[14px] md:text-[15px] leading-relaxed mb-10 max-w-2xl">
+              Tell us what you are planning, and let&apos;s discuss an event approach suited to your requirements.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link 
+                href="mailto:contact@colorknit.com?subject=Enquiry%20About%20Corporate%20Event" 
+                className="inline-flex items-center gap-2 bg-[#008484] hover:bg-[#006e6e] text-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all shadow-md hover:shadow-lg"
+              >
+                <Mail size={16} />
+                Enquire About Your Event
+              </Link>
+              
+              <Link 
+                href="https://wa.me/919811121153?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20discuss%20planning%20a%20corporate%20event." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all"
+              >
+                <MessageCircle size={16} />
+                Copy Enquiry Message
+              </Link>
             </div>
           </div>
         </section>
@@ -459,62 +404,51 @@ export default function CorporateEvents() {
         {/* FAQ Section */}
         <section className="w-full bg-[#e9e6f0] py-20 px-4">
           <div className="max-w-4xl mx-auto">
-            {/* Headers */}
             <div className="text-center mb-12">
-              <h2 className="text-[#222] text-[20px] md:text-[24px] font-bold tracking-[0.05em] uppercase mb-4">
-                FREQUENTLY ASKED QUESTIONS – CORPORATE EVENTS
+              <h2 className="text-[#847565] text-[13px] md:text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
+                Frequently Asked Questions
               </h2>
+              <h3 className="text-[#222] text-[22px] md:text-[28px] font-bold tracking-tight mb-4">
+                Corporate Event Management in Pune
+              </h3>
               <div className="w-[40px] h-[2px] bg-[#a88f78] mx-auto mb-6"></div>
-              <p className="text-[#555] text-[15px] md:text-[16px]">
-                Everything You Need To Know About Our <Link href="#" className="text-[#00a8a8] font-semibold hover:underline">Event Management Services</Link>
+              <p className="text-[#555] text-[14.5px]">
+                Common questions about our corporate event planning, production, and execution capabilities.
               </p>
             </div>
 
-            {/* Accordion List */}
-            <FaqAccordion 
-              faqs={[
-                {
-                  question: "What are corporate events?",
-                  answer: "Corporate events are professionally organized gatherings designed by companies for their employees, clients, or stakeholders. These events range from formal business conferences and product launches to informal team-building retreats and annual day celebrations. A successful corporate event serves as a strategic tool to improve brand visibility, foster employee engagement, and build lasting business relationships. As a leading corporate event management company in Delhi NCR, Showmakerz ensures these events align perfectly with your organizational goals."
-                },
-                {
-                  question: "What are the types of corporate events?",
-                  answer: "There is a wide variety of corporate events tailored to specific business objectives. The most common types include conferences, seminars, dealer meets, product launches, award ceremonies, and annual day celebrations. Additionally, many companies host gala dinners, exhibition stalls, and executive retreats. Our corporate event planners specialize in executing all these formats seamlessly, providing end-to-end event production, bespoke thematic decor, and technical AV support to create memorable experiences across India."
-                },
-                {
-                  question: "Why are corporate events important for businesses?",
-                  answer: "Corporate events are vital for driving business growth and maintaining a positive company culture. They offer a unique platform to launch new products, network with industry leaders, and reward top-performing employees. Hosting well-executed corporate events helps enhance brand image, boost employee morale, and generate measurable ROI through improved client relations and lead generation. By partnering with trusted event organizers in Gurgaon and Noida, businesses can ensure their events leave a lasting, impactful impression."
-                },
-                {
-                  question: "What does a corporate event planner do?",
-                  answer: "A corporate event planner manages every aspect of an event from conceptualization to on-ground execution. This includes venue selection, budgeting, creative stage design, audiovisual setup, artist management, and hospitality logistics. By hiring experienced event planners like EMG Showmakerz, organizations are relieved of the stressful logistical complexities. We handle vendor coordination and technical production to ensure a flawless, stress-free event, allowing your internal teams to focus solely on networking and core business objectives."
-                },
-                {
-                  question: "How much does a corporate event cost?",
-                  answer: "The cost of a corporate event varies significantly based on factors such as the scale of the event, venue choice, guest count, thematic decor, and technical requirements. A high-profile product launch or a multi-day conference will have a different budget structure than a half-day employee engagement activity. At Showmakerz, we provide tailored, cost-effective event management solutions designed to maximize your budget lines without compromising on quality. Contact us today for a free, customized quote tailored to your specific event needs in Delhi NCR."
-                }
-              ]} 
-            />
+            <FaqAccordion faqs={faqs} />
           </div>
         </section>
 
-        {/* Contact Banner Section */}
+        {/* Contact Banner Bar */}
         <section className="w-full bg-gradient-to-r from-[#281b31] to-[#120a17] py-10 px-4 border-t border-[#3a2845]">
-          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-8">
-            <h2 className="text-white text-[18px] md:text-[22px] font-semibold text-center tracking-wide">
-              Plan Your Next Corporate Event With Delhi NCR's Trusted Experts
-            </h2>
+          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
+            <h3 className="text-white text-[18px] md:text-[20px] font-semibold text-center tracking-wide">
+              Plan Your Next Corporate Event With Pune&apos;s Trusted Experts
+            </h3>
             
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="#" className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors">
+              <Link 
+                href="tel:+919811121153" 
+                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
+              >
                 <Phone size={14} strokeWidth={2.5} /> CALL US NOW
               </Link>
               
-              <Link href="#" className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors">
+              <Link 
+                href="https://wa.me/919811121153" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
+              >
                 <MessageCircle size={14} strokeWidth={2.5} /> CHAT ON WHATSAPP
               </Link>
               
-              <Link href="#" className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors">
+              <Link 
+                href="mailto:contact@colorknit.com" 
+                className="flex items-center gap-2 border border-white text-white px-6 py-2.5 rounded-[2px] text-[11px] font-bold tracking-wider hover:bg-white hover:text-[#17131b] transition-colors"
+              >
                 <Mail size={14} strokeWidth={2.5} /> ENQUIRY FORM
               </Link>
             </div>
@@ -522,7 +456,16 @@ export default function CorporateEvents() {
         </section>
       </main>
 
-      <Footer />
+      <Footer companyDescription={
+        <div className="leading-relaxed mb-4 font-medium text-[#555]">
+          <p className="mb-3">
+            <strong>ColorKnit Events</strong> is a premier corporate event management company in Pune. We deliver thoughtfully planned corporate experiences—from MICE and dealer meets to annual celebrations, town halls, and client engagements.
+          </p>
+          <p>
+            Combining creative strategy, venue expertise, and meticulous on-site execution, we ensure every event reflects your brand and accomplishes your business objectives.
+          </p>
+        </div>
+      } />
     </>
   );
 }
