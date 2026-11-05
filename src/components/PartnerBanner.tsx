@@ -41,7 +41,7 @@ export default function PartnerBanner({
           </Link>
 
           <Link
-            href="mailto:contact@colorknit.com"
+            href="/contact"
             className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm"
           >
             <Mail size={17} fill="currentColor" />

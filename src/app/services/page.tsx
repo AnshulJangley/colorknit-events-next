@@ -291,7 +291,7 @@ export default function ServicesPage() {
 
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="mailto:contact@colorknit.com?subject=Event%20Enquiry"
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-[#008484] hover:bg-[#006e6e] text-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all shadow-md hover:shadow-lg"
               >
                 <Mail size={16} />

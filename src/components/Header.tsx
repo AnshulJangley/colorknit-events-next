@@ -78,10 +78,6 @@ export default function Header() {
     {
       title: "Contact Us",
       href: "/contact",
-      subItems: [
-        { title: "Contact Details", href: "/contact#details" },
-        { title: "Enquiry Form", href: "/contact#enquiry" },
-      ],
     },
   ];
 

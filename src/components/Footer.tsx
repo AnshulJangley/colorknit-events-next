@@ -66,26 +66,23 @@ export default function Footer({ companyDescription }: FooterProps) {
             <ul className="flex flex-col gap-4 mb-6">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gray-800 shrink-0 mt-0.5" fill="currentColor" strokeWidth={1} />
-                <span className="font-semibold text-gray-800 leading-tight">Main Office: 31, 4th Floor,<br/>Sant Nagar, East of Kailash,<br/>New Delhi - 110065</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={16} className="text-gray-800 shrink-0 mt-0.5" fill="currentColor" strokeWidth={1} />
-                <span className="font-semibold text-gray-800 leading-tight">Production Base: 1563,<br/>Shalimar Garden Ext,<br/>Sahibabad, Delhi NCR -<br/>201005</span>
+                <span className="font-semibold text-gray-800 leading-tight">
+                  Pune Office: Flat No. 303, 3rd Floor,<br/>Fortune House, Baner - Pashan Link Rd,<br/>Baner, Pune, Maharashtra 411045
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-[#007b7b] shrink-0" fill="currentColor" strokeWidth={1} />
-                <span className="font-semibold text-[#007b7b]">+91-98111-21153</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Smartphone size={16} className="text-[#007b7b] shrink-0" />
-                <span className="font-semibold text-[#007b7b]">+91-98111-73792</span>
+                <a href="tel:+919271114024" className="font-semibold text-[#007b7b] hover:underline">+91 9271114024</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-[#007b7b] shrink-0" fill="currentColor" strokeWidth={1} />
-                <span className="font-semibold text-[#007b7b]">pankaj@showmakerz.com</span>
+                <a href="mailto:info@colorknitevents.com" className="font-semibold text-[#007b7b] hover:underline">info@colorknitevents.com</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[12.5px] font-medium text-gray-600">Working Hours: Mon-Sat: 10AM – 7PM</span>
               </li>
             </ul>
-            <Link href="#" className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-5 py-2.5 font-bold text-[12px] uppercase transition-colors shadow-sm">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-5 py-2.5 font-bold text-[12px] uppercase transition-colors shadow-sm">
               <Mail size={14} fill="currentColor" />
               ENQUIRY FORM
             </Link>
