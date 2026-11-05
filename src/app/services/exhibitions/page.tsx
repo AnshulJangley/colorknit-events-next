@@ -137,7 +137,7 @@ export default function ExhibitionsPage() {
               Pune &amp; Across India
             </span>
 
-            <h1 className="text-white text-3xl md:text-5xl lg:text-[46px] font-extrabold tracking-tight mb-4 drop-shadow-md max-w-4xl leading-tight">
+            <h1 className="font-cinzel text-white text-3xl md:text-5xl lg:text-[46px] font-bold tracking-wider mb-4 drop-shadow-md max-w-4xl leading-tight">
               Exhibition Planning &amp; Management
             </h1>
 

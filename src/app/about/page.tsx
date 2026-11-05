@@ -76,7 +76,7 @@ export default function AboutPage() {
               Pune &amp; Across India
             </span>
 
-            <h1 className="text-white text-3xl md:text-5xl lg:text-[46px] font-extrabold tracking-tight mb-4 drop-shadow-md max-w-4xl leading-tight">
+            <h1 className="font-cinzel text-white text-3xl md:text-5xl lg:text-[46px] font-bold tracking-wider mb-4 drop-shadow-md max-w-4xl leading-tight">
               About ColorKnit Events
             </h1>
 
@@ -118,7 +118,7 @@ export default function AboutPage() {
                 <h2 className="font-cinzel text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
                   1. Our Story
                 </h2>
-                <h3 className="text-[#2b2b2b] text-[26px] md:text-[34px] font-bold tracking-tight mb-4">
+                <h3 className="font-cinzel text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-wide mb-4">
                   Every Great Experience Begins With an Idea
                 </h3>
                 <div className="w-[50px] h-[3px] bg-[#dc2626] mb-8"></div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
                 <h2 className="font-cinzel text-[#847565] text-[14px] md:text-[15px] font-bold tracking-[0.2em] uppercase mb-2">
                   2. Why Choose Us
                 </h2>
-                <h3 className="text-[#2b2b2b] text-[26px] md:text-[34px] font-bold tracking-tight mb-4">
+                <h3 className="font-cinzel text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-wide mb-4">
                   Your Vision. Our Creative Approach. Memorable Experiences.
                 </h3>
                 <div className="w-[50px] h-[3px] bg-[#008484] mb-8"></div>
@@ -257,7 +257,7 @@ export default function AboutPage() {
               <h2 className="font-cinzel text-[#847565] text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
                 Portfolio Showcase
               </h2>
-              <h3 className="text-[#2b2b2b] text-[26px] md:text-[34px] font-extrabold tracking-tight mb-4">
+              <h3 className="font-cinzel text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-wide mb-4">
                 Gallery of Our Work
               </h3>
               <div className="w-[60px] h-[3px] bg-[#dc2626] mx-auto mb-6"></div>
@@ -302,7 +302,7 @@ export default function AboutPage() {
             <h2 className="font-cinzel text-[#847565] text-[14px] font-bold tracking-[0.2em] uppercase mb-2">
               3. Our Clients
             </h2>
-            <h3 className="text-[#2b2b2b] text-[26px] md:text-[32px] font-extrabold tracking-tight mb-4">
+            <h3 className="font-cinzel text-[#2b2b2b] text-[24px] md:text-[32px] font-bold tracking-wide mb-4">
               Trusted by Leading Organizations
             </h3>
             <div className="w-[50px] h-[3px] bg-[#008484] mx-auto mb-10"></div>
