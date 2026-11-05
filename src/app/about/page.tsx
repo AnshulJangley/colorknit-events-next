@@ -10,6 +10,24 @@ export const metadata: Metadata = {
   title: "About ColorKnit Events | Event Management Company in Pune",
   description:
     "Get to know ColorKnit Events, an event management company in Pune offering corporate events, exhibitions, weddings, corporate gifting, sports and MICE event solutions.",
+  alternates: {
+    canonical: "https://www.colorknit.in/about",
+  },
+  openGraph: {
+    title: "About ColorKnit Events | Event Management Company in Pune",
+    description:
+      "Get to know ColorKnit Events, an event management company in Pune offering corporate events, exhibitions, weddings, corporate gifting, sports and MICE event solutions.",
+    url: "https://www.colorknit.in/about",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About ColorKnit Events | Event Management Company in Pune",
+    description:
+      "Get to know ColorKnit Events, an event management company in Pune offering corporate events, exhibitions, weddings, corporate gifting, sports and MICE event solutions.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function AboutPage() {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Phone, MessageCircle, Mail } from "lucide-react";
@@ -12,8 +13,8 @@ const annualDayFaqs = [
     answer: "A corporate annual day event is a grand celebration hosted by companies to mark their foundation day, celebrate achievements, recognize employee contributions, and foster team bonding through entertainment and engaging activities."
   },
   {
-    question: "Do you organize corporate annual day events in Delhi, Gurgaon and Noida?",
-    answer: "Yes, we provide end-to-end event management services across Delhi, Gurgaon, Noida, and the wider NCR region, offering premium venues and flawless execution."
+    question: "Do you organize corporate annual day events in Pune and across India?",
+    answer: "Yes, we provide end-to-end event management services across Pune, Mumbai, Bengaluru, Hyderabad, Delhi NCR, and pan India, offering premium venues and flawless execution."
   },
   {
     question: "What services are included in your annual day event planning?",
@@ -37,9 +38,19 @@ const annualDayFaqs = [
   }
 ];
 
-export const metadata = {
-  title: "Corporate Annual Day Event Organisers | EMG Showmakerz",
-  description: "Premier Annual Day event Management Company in Delhi, Gurgaon & Noida",
+export const metadata: Metadata = {
+  title: "Corporate Annual Day Event Organisers in Pune | ColorKnit Events",
+  description: "Premier Annual Day and Gala Event Management Company in Pune & Pan India. Theme decor, artist management, stage fabrication and seamless execution.",
+  alternates: {
+    canonical: "https://www.colorknit.in/annual-day-gala-events",
+  },
+  openGraph: {
+    title: "Corporate Annual Day Event Organisers in Pune | ColorKnit Events",
+    description: "Premier Annual Day and Gala Event Management Company in Pune & Pan India. Theme decor, artist management, stage fabrication and seamless execution.",
+    url: "https://www.colorknit.in/annual-day-gala-events",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function AnnualDayGalaEventsPage() {
@@ -59,7 +70,7 @@ export default function AnnualDayGalaEventsPage() {
             
             <div className="bg-[#2a1a2e]/60 border border-white/5 rounded-md py-4 px-6 mb-10 w-full max-w-3xl">
               <p className="text-gray-200 text-[14px] md:text-[15px] font-medium tracking-wide">
-                Premier Annual Day event Management Company in Delhi, Gurgaon & Noida
+                Premier Annual Day Event Management Company in Pune & Pan India
               </p>
             </div>
             
@@ -81,7 +92,7 @@ export default function AnnualDayGalaEventsPage() {
                 ANNUAL DAY EVENT PLANNERS
               </h2>
               <h3 className="text-[#967455] text-[15px] md:text-[17px] font-medium mb-4">
-                in Delhi NCR
+                in Pune & Across India
               </h3>
               <div className="w-10 h-[2px] bg-[#967455] mx-auto"></div>
             </div>
@@ -126,7 +137,7 @@ export default function AnnualDayGalaEventsPage() {
           {/* Top Dark Stats Block */}
           <div className="bg-[#140b17] py-16 px-4 text-center">
             <h2 className="text-white text-[18px] md:text-[22px] font-bold mb-12 max-w-3xl mx-auto leading-relaxed">
-              18+ Years Experienced Corporate Annual Day Event Management Company in Delhi NCR (Gurgaon & Noida)
+              18+ Years Experienced Corporate Annual Day Event Management Company in Pune & Pan India
             </h2>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
@@ -181,7 +192,7 @@ export default function AnnualDayGalaEventsPage() {
             {/* Text */}
             <div className="text-[#555] text-[13px] md:text-[14px] leading-[1.8] font-medium max-w-[850px] mx-auto space-y-6 mb-16">
               <p>
-                We are a full-service <Link href="#" className="text-[#008484] font-semibold hover:underline">corporate event management company in Delhi NCR</Link>. Over the years, we have successfully executed a wide range of corporate annual day events, from small intimate gatherings to large-scale themed productions.
+                We are a full-service <Link href="/corporate-events" className="text-[#008484] font-semibold hover:underline">corporate event management company in Pune</Link>. Over the years, we have successfully executed a wide range of corporate annual day events, from small intimate gatherings to large-scale themed productions.
               </p>
               <p>
                 Our comprehensive services ensure that every element required to deliver a successful and memorable corporate annual day event is professionally planned and executed.
@@ -223,7 +234,7 @@ export default function AnnualDayGalaEventsPage() {
             </h2>
             
             <p className="text-gray-200 text-[12px] md:text-[13px] font-medium leading-[1.8] max-w-3xl mb-8">
-              We offer every service required to host a memorable corporate annual day event in Delhi NCR from start to finish. If you are looking for specific services like stage setup or d&eacute;cor only, we can also cater to your requirements.
+              We offer every service required to host a memorable corporate annual day event in Pune & pan India from start to finish. If you are looking for specific services like stage setup or d&eacute;cor only, we can also cater to your requirements.
             </p>
             
             <Link 
@@ -320,14 +331,14 @@ export default function AnnualDayGalaEventsPage() {
             {/* Bottom CTA */}
             <div className="text-center w-full max-w-3xl">
               <h3 className="text-[#444] text-[16px] md:text-[18px] font-bold mb-3">
-                Hire Showmakerz For Your Corporate Annual Day Event
+                Hire ColorKnit Events For Your Corporate Annual Day Event
               </h3>
               <p className="text-[#777] text-[12.5px] md:text-[13.5px] font-medium mb-8 leading-relaxed">
                 As experienced corporate annual day organizers, we specialize in planning and executing events of all scales with precision and creativity.
               </p>
               
               <Link 
-                href="#" 
+                href="/contact" 
                 className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
               >
                 PLAN YOUR ANNUAL DAY
@@ -416,7 +427,7 @@ export default function AnnualDayGalaEventsPage() {
       <Footer 
         companyDescription={
           <p className="leading-[1.8] mb-6 font-medium text-[13px] md:text-[14px]">
-            As an experienced corporate annual day event management company, we specialize in crafting inspiring and engaging celebrations. From custom theme d&eacute;cor and premium live entertainment to rewards, recognition, and employee engagement, we deliver seamless end-to-end event execution across Delhi NCR.
+            As an experienced corporate annual day event management company in Pune, we specialize in crafting inspiring and engaging celebrations. From custom theme d&eacute;cor and premium live entertainment to rewards, recognition, and employee engagement, we deliver seamless end-to-end event execution across Pune and pan India.
           </p>
         }
       />

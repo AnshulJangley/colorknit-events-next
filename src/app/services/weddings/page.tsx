@@ -12,6 +12,24 @@ export const metadata: Metadata = {
   description:
     "Looking for a wedding planner in Pune? ColorKnit Weddings manages wedding planning, decor, catering, photography, destination weddings and guest hospitality.",
   keywords: "Wedding Event Management, wedding planner in Pune, destination weddings Pune, wedding decor, catering coordination",
+  alternates: {
+    canonical: "https://www.colorknit.in/services/weddings",
+  },
+  openGraph: {
+    title: "Wedding Planner in Pune | Wedding Event Management – ColorKnit",
+    description:
+      "Looking for a wedding planner in Pune? ColorKnit Weddings manages wedding planning, decor, catering, photography, destination weddings and guest hospitality.",
+    url: "https://www.colorknit.in/services/weddings",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wedding Planner in Pune | Wedding Event Management – ColorKnit",
+    description:
+      "Looking for a wedding planner in Pune? ColorKnit Weddings manages wedding planning, decor, catering, photography, destination weddings and guest hospitality.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function WeddingsPage() {

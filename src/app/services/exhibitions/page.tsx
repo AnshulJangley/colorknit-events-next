@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "Exhibition Planning & Management in Pune | ColorKnit Events",
   description:
     "ColorKnit Events offers exhibition planning and management in Pune — stall design, 3D visualization, fabrication, branding, installation and dismantling for trade shows, expos and corporate exhibitions.",
+  alternates: {
+    canonical: "https://www.colorknit.in/services/exhibitions",
+  },
+  openGraph: {
+    title: "Exhibition Planning & Management in Pune | ColorKnit Events",
+    description:
+      "ColorKnit Events offers exhibition planning and management in Pune — stall design, 3D visualization, fabrication, branding, installation and dismantling for trade shows, expos and corporate exhibitions.",
+    url: "https://www.colorknit.in/services/exhibitions",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Exhibition Planning & Management in Pune | ColorKnit Events",
+    description:
+      "ColorKnit Events offers exhibition planning and management in Pune — stall design, 3D visualization, fabrication, branding, installation and dismantling for trade shows, expos and corporate exhibitions.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function ExhibitionsPage() {

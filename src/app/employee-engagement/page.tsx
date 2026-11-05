@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowRightCircle, Check, Plus, Phone, MessageCircle, Mail, ImageIcon } from "lucide-react";
@@ -6,15 +7,25 @@ import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
 import PartnerBanner from "@/components/PartnerBanner";
 
-export const metadata = {
-  title: "Employee Engagement Activities | EMG Showmakerz",
-  description: "Boost employee morale and team spirit with our expert employee engagement event planning services in Delhi NCR.",
+export const metadata: Metadata = {
+  title: "Employee Engagement Activities & Offsites Pune | ColorKnit Events",
+  description: "Boost employee morale and team spirit with expert employee engagement activities, team-building offsites, and corporate workshops in Pune & Pan India.",
+  alternates: {
+    canonical: "https://www.colorknit.in/employee-engagement",
+  },
+  openGraph: {
+    title: "Employee Engagement Activities & Offsites Pune | ColorKnit Events",
+    description: "Boost employee morale and team spirit with expert employee engagement activities, team-building offsites, and corporate workshops in Pune & Pan India.",
+    url: "https://www.colorknit.in/employee-engagement",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 const employeeEngagementFaqs = [
   {
     question: "What types of employee engagement events do you organize?",
-    answer: "We organize a comprehensive range of employee engagement events designed to boost workplace morale and team synergy. Our portfolio includes interactive team-building offsites, corporate family day outings, leadership town halls, annual gala dinners, festive office celebrations, and specialized wellness workshops across Delhi NCR. Each event is strategically planned to align with your internal HR objectives and corporate culture."
+    answer: "We organize a comprehensive range of employee engagement events designed to boost workplace morale and team synergy. Our portfolio includes interactive team-building offsites, corporate family day outings, leadership town halls, annual gala dinners, festive office celebrations, and specialized wellness workshops across Pune and pan India. Each event is strategically planned to align with your internal HR objectives and corporate culture."
   },
   {
     question: "Can employee engagement programs be customized for our company culture?",
@@ -22,7 +33,7 @@ const employeeEngagementFaqs = [
   },
   {
     question: "Do you provide venue selection and event management support?",
-    answer: "Yes, we provide end-to-end event management support. Our turnkey corporate solutions cover everything from meticulous venue sourcing and negotiation across premier locations in Delhi, Gurugram, and Noida, to complete on-site execution. We handle technical production, stage design, vendor coordination, artist management, and safety compliance, allowing your internal teams to participate in the event completely stress-free."
+    answer: "Yes, we provide end-to-end event management support. Our turnkey corporate solutions cover everything from meticulous venue sourcing and negotiation across premier locations in Pune, Mumbai, Lonavala, Goa, and pan India, to complete on-site execution. We handle technical production, stage design, vendor coordination, artist management, and safety compliance, allowing your internal teams to participate in the event completely stress-free."
   },
   {
     question: "Can you share event ideas and budget estimates before confirmation?",
@@ -94,15 +105,15 @@ export default function EmployeeEngagement() {
               {/* Text Column */}
               <div className="text-[#444] text-[14.5px] leading-[1.8] flex flex-col gap-6 pt-2">
                 <p>
-                  At Showmakerz, we understand the vital role that HR and corporate administration teams play in shaping a high-performance workplace culture. From custom internal employee engagement programs and strategic incentive events to seamless executive town halls and national business conferences, our expert planners ensure absolute logistical precision.
+                  At ColorKnit Events, we understand the vital role that HR and corporate administration teams play in shaping a high-performance workplace culture. From custom internal employee engagement programs and strategic incentive events to seamless executive town halls and national business conferences, our expert planners ensure absolute logistical precision.
                 </p>
                 
                 <p>
-                  As a premier <strong className="text-[#333]">employee engagement event planner in Delhi, Gurugram, and NCR</strong>, we design activations that unite workforces, strengthen corporate teams, and cultivate a deep sense of corporate belonging. Our customized engagement roadmaps are engineered to align with your corporate values, maximize workforce morale, and inspire long-term employee collaboration.
+                  As a premier <strong className="text-[#333]">employee engagement event planner in Pune and across India</strong>, we design activations that unite workforces, strengthen corporate teams, and cultivate a deep sense of corporate belonging. Our customized engagement roadmaps are engineered to align with your corporate values, maximize workforce morale, and inspire long-term employee collaboration.
                 </p>
                 
                 <p>
-                  Our <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate event planning experts</Link> specialize across all experiential formats—including virtual, hybrid, and immersive live on-site campaigns. Backed by nearly two decades of execution expertise, our internal portfolio spans multi-city conferences, interactive leadership town halls, strategic brand launches, media press meets, and prestigious annual award galas.
+                  Our <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">corporate event planning experts</Link> specialize across all experiential formats—including virtual, hybrid, and immersive live on-site campaigns. Backed by nearly two decades of execution expertise, our internal portfolio spans multi-city conferences, interactive leadership town halls, strategic brand launches, media press meets, and prestigious annual award galas.
                 </p>
               </div>
 
@@ -120,10 +131,10 @@ export default function EmployeeEngagement() {
             {/* Contact Button */}
             <div className="mt-16 flex justify-center">
               <Link 
-                href="#" 
+                href="/contact" 
                 className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
               >
-                CONTACT SHOWMAKERZ
+                CONTACT COLORKNIT EVENTS
                 <ArrowRight size={18} strokeWidth={2.5} />
               </Link>
             </div>
@@ -138,7 +149,7 @@ export default function EmployeeEngagement() {
             </h2>
             
             <p className="text-[#e2e2e2] text-[14.5px] leading-[1.8] mb-6 max-w-4xl text-left md:text-center">
-              At Showmakerz, we believe <strong className="text-white font-bold">people matter</strong>. Whether you are planning a high-energy corporate outing, an interactive team-building activity, a milestone foundation day, an immersive <strong className="text-white font-bold">office celebration</strong>, or an annual gala—we are here to relieve your HR and administrative teams from the operational pressures of event planning.
+              At ColorKnit Events, we believe <strong className="text-white font-bold">people matter</strong>. Whether you are planning a high-energy corporate outing, an interactive team-building activity, a milestone foundation day, an immersive <strong className="text-white font-bold">office celebration</strong>, or an annual gala—we are here to relieve your HR and administrative teams from the operational pressures of event planning.
             </p>
             
             <p className="text-[#e2e2e2] text-[14.5px] leading-[1.8] mb-14 max-w-4xl text-left md:text-center">
@@ -306,7 +317,7 @@ export default function EmployeeEngagement() {
                 YOUR GO-TO EMPLOYEE ENGAGEMENT
               </h2>
               <h3 className="text-[#847565] text-[18px] md:text-[20px] font-semibold tracking-wide mb-6">
-                Event Planner in Delhi NCR
+                Event Planner in Pune & Pan India
               </h3>
               <div className="w-[60px] h-[2px] bg-[#a88f78] mx-auto"></div>
             </div>
@@ -315,11 +326,11 @@ export default function EmployeeEngagement() {
               {/* Text Column */}
               <div className="text-[#444] text-[14.5px] leading-[1.8] flex flex-col gap-6">
                 <p>
-                  Planning a premier <strong className="text-[#333]">corporate event</strong> takes more than basic logistics—it demands immersive creativity, technical precision, and proven agency expertise. At Showmakerz, we bring all three elements to every single internal workforce campaign.
+                  Planning a premier <strong className="text-[#333]">corporate event</strong> takes more than basic logistics—it demands immersive creativity, technical precision, and proven agency expertise. At ColorKnit Events, we bring all three elements to every single internal workforce campaign.
                 </p>
                 
                 <p>
-                  Recognised among the top <Link href="#" className="text-[#6b3a8e] hover:underline font-semibold underline">corporate event management companies in Delhi NCR</Link>, we have helped leading enterprises across diverse industries craft meaningful, high-impact workforce experiences.
+                  Recognised among the top <Link href="/corporate-events" className="text-[#6b3a8e] hover:underline font-semibold underline">corporate event management companies in Pune</Link>, we have helped leading enterprises across diverse industries craft meaningful, high-impact workforce experiences.
                 </p>
                 
                 <p>
@@ -349,7 +360,7 @@ export default function EmployeeEngagement() {
                 TRUSTED BY HR TEAMS
               </h2>
               <h3 className="text-[#847565] text-[18px] md:text-[20px] font-semibold tracking-wide mb-6">
-                Across Delhi, Gurugram, and NCR
+                Across Pune, Mumbai & Pan India
               </h3>
               <div className="w-[60px] h-[2px] bg-[#a88f78] mx-auto"></div>
             </div>
@@ -368,15 +379,15 @@ export default function EmployeeEngagement() {
               {/* Text Column - Right */}
               <div className="text-[#444] text-[13.5px] leading-[1.8] flex flex-col gap-6 order-1 md:order-2 pt-4 md:pt-0">
                 <p>
-                  With 300+ successful internal activations to our credit, we specialise in delivering high-impact <strong className="text-[#333]">employee engagement programs</strong>, comprehensive <strong className="text-[#333]">corporate family days</strong>, corporate <strong className="text-[#333]">town halls</strong>, and seamless corporate <strong className="text-[#333]">induction programs</strong>.
+                  With 3,600+ successful events and activations to our credit, we specialise in delivering high-impact <strong className="text-[#333]">employee engagement programs</strong>, comprehensive <strong className="text-[#333]">corporate family days</strong>, corporate <strong className="text-[#333]">town halls</strong>, and seamless corporate <strong className="text-[#333]">induction programs</strong>.
                 </p>
                 
                 <p>
-                  We manage a diverse spectrum of seasonal festive and workspace campaigns—from interactive <Link href="#" className="text-[#008484] hover:underline font-semibold">family day outings</Link> and annual gala celebrations to custom <Link href="#" className="text-[#008484] hover:underline font-semibold">team-building activities</Link>—outfitted with immersive thematic layouts, live food counters, and custom gaming activation zones.
+                  We manage a diverse spectrum of seasonal festive and workspace campaigns—from interactive <Link href="/family-day-outing" className="text-[#008484] hover:underline font-semibold">family day outings</Link> and annual gala celebrations to custom <Link href="/employee-engagement" className="text-[#008484] hover:underline font-semibold">team-building activities</Link>—outfitted with immersive thematic layouts, live food counters, and custom gaming activation zones.
                 </p>
                 
                 <p>
-                  Every initiative is engineered specifically around corporate administration metrics. From precision venue selection and strict safety compliance audits to flawless delivery, your team is supported every step of the journey by a dedicated Showmakerz execution partner.
+                  Every initiative is engineered specifically around corporate administration metrics. From precision venue selection and strict safety compliance audits to flawless delivery, your team is supported every step of the journey by a dedicated ColorKnit Events execution partner.
                 </p>
                 
                 <p>
@@ -388,7 +399,7 @@ export default function EmployeeEngagement() {
             {/* Request a Quote Button */}
             <div className="mt-16 flex justify-center">
               <Link 
-                href="#" 
+                href="/contact" 
                 className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
               >
                 REQUEST A QUOTE
@@ -435,11 +446,11 @@ export default function EmployeeEngagement() {
             {/* Bottom Paragraphs & CTA */}
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
               <p className="text-[#e2e2e2] text-[13px] md:text-[14px] leading-[1.8] font-medium mb-6">
-                We help you celebrate every corporate milestone, annual festival, and internal cultural moment. Relying on our custom venue sourcing analytics and trusted enterprise vendor networks, we recommend ideal event coordinates across Delhi, Gurugram, Noida, and the NCR—perfectly structured to your workforce capacity and allocated budget.
+                We help you celebrate every corporate milestone, annual festival, and internal cultural moment. Relying on our custom venue sourcing analytics and trusted enterprise vendor networks, we recommend ideal event coordinates across Pune, Mumbai, Lonavala, Goa, and pan India—perfectly structured to your workforce capacity and allocated budget.
               </p>
               
               <p className="text-[#e2e2e2] text-[13px] md:text-[14px] leading-[1.8] font-medium mb-6">
-                Are you looking to elevate your next internal employee engagement initiative? Partner with Showmakerz to bring your operational vision to life seamlessly, stress-free, and spectacularly.
+                Are you looking to elevate your next internal employee engagement initiative? Partner with ColorKnit Events to bring your operational vision to life seamlessly, stress-free, and spectacularly.
               </p>
               
               <p className="text-[#e2e2e2] text-[13px] md:text-[14px] leading-[1.8] font-medium mb-12">

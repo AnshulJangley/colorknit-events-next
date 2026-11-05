@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarCheck, Wallet, Sparkles, Presentation, MonitorPlay, Speaker, Projector, Headphones, ArrowRight, List, Plus, Star, User, MessageCircle, Phone, Mail } from "lucide-react";
@@ -5,6 +6,39 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FaqAccordion from "@/components/FaqAccordion";
 import PartnerBanner from "@/components/PartnerBanner";
+
+export const metadata: Metadata = {
+  title: "Colorknit – #1 Corporate Event Management Company in Pune | Pan India",
+  description:
+    "Colorknit is a leading corporate event management company in Pune with 18+ years of experience and 3,600+ events executed across India. Specialists in annual days, conferences, product launches, employee engagement & MICE.",
+  alternates: {
+    canonical: "https://www.colorknit.in",
+  },
+  openGraph: {
+    title: "Colorknit – #1 Corporate Event Management Company in Pune | Pan India",
+    description:
+      "18+ years of excellence in corporate event management. Colorknit delivers impactful conferences, annual days, product launches & employee engagement events across India.",
+    url: "https://www.colorknit.in",
+    siteName: "Colorknit – Corporate Event Management Company",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Colorknit Corporate Event Management Company Pune",
+      },
+    ],
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Colorknit – #1 Corporate Event Management Company in Pune | Pan India",
+    description:
+      "3,600+ events. 18+ years. Pan India. Colorknit delivers world-class corporate event management from Pune to every corner of India.",
+    images: ["/images/og-image.jpg"],
+  },
+};
 
 export default function Home() {
   const images = [

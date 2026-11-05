@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "MICE Event Management in Pune | Meetings & Conferences – ColorKnit",
   description:
     "Looking for MICE event management in Pune? ColorKnit plans corporate meetings, conferences, exhibitions, dealer meets, sales meetings and business events.",
+  alternates: {
+    canonical: "https://www.colorknit.in/services/mice",
+  },
+  openGraph: {
+    title: "MICE Event Management in Pune | Meetings & Conferences – ColorKnit",
+    description:
+      "Looking for MICE event management in Pune? ColorKnit plans corporate meetings, conferences, exhibitions, dealer meets, sales meetings and business events.",
+    url: "https://www.colorknit.in/services/mice",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MICE Event Management in Pune | Meetings & Conferences – ColorKnit",
+    description:
+      "Looking for MICE event management in Pune? ColorKnit plans corporate meetings, conferences, exhibitions, dealer meets, sales meetings and business events.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function MicePage() {

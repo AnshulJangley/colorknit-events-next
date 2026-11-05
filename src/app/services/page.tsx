@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "Event Management Services in Pune | ColorKnit Events",
   description:
     "Explore ColorKnit Events' services in Pune, including corporate events, exhibitions, weddings, corporate gifting, sports events and MICE event management.",
+  alternates: {
+    canonical: "https://www.colorknit.in/services",
+  },
+  openGraph: {
+    title: "Event Management Services in Pune | ColorKnit Events",
+    description:
+      "Explore ColorKnit Events' services in Pune, including corporate events, exhibitions, weddings, corporate gifting, sports events and MICE event management.",
+    url: "https://www.colorknit.in/services",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Event Management Services in Pune | ColorKnit Events",
+    description:
+      "Explore ColorKnit Events' services in Pune, including corporate events, exhibitions, weddings, corporate gifting, sports events and MICE event management.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function ServicesPage() {

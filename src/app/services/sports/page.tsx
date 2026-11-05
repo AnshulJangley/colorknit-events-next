@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "Sports Event Management in Pune | ColorKnit Events",
   description:
     "Looking for sports event management in Pune? ColorKnit Events organises sports tournaments, cricket leagues, football and badminton competitions, corporate sports days and school sports events.",
+  alternates: {
+    canonical: "https://www.colorknit.in/services/sports",
+  },
+  openGraph: {
+    title: "Sports Event Management in Pune | ColorKnit Events",
+    description:
+      "Looking for sports event management in Pune? ColorKnit Events organises sports tournaments, cricket leagues, football and badminton competitions, corporate sports days and school sports events.",
+    url: "https://www.colorknit.in/services/sports",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sports Event Management in Pune | ColorKnit Events",
+    description:
+      "Looking for sports event management in Pune? ColorKnit Events organises sports tournaments, cricket leagues, football and badminton competitions, corporate sports days and school sports events.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function SportsPage() {

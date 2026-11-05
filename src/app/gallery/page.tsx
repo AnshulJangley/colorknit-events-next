@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, MessageCircle, Mail } from "lucide-react";
@@ -6,9 +7,19 @@ import Footer from "@/components/Footer";
 import GalleryGrid from "@/components/GalleryGrid";
 import PartnerBanner from "@/components/PartnerBanner";
 
-export const metadata = {
-  title: "Event Gallery | EMG Showmakerz",
-  description: "Browse our extensive gallery of corporate events, employee engagement activities, and more.",
+export const metadata: Metadata = {
+  title: "Event Gallery & Portfolio | ColorKnit Events Pune",
+  description: "Browse our extensive gallery of corporate conferences, annual days, gala dinners, MICE, exhibitions, and employee engagement events executed across Pune and India.",
+  alternates: {
+    canonical: "https://www.colorknit.in/gallery",
+  },
+  openGraph: {
+    title: "Event Gallery & Portfolio | ColorKnit Events Pune",
+    description: "Browse our extensive gallery of corporate conferences, annual days, gala dinners, MICE, exhibitions, and employee engagement events executed across Pune and India.",
+    url: "https://www.colorknit.in/gallery",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 const galleryItems = [
@@ -74,18 +85,18 @@ export default function Gallery() {
             {/* Dark Purple Banner */}
             <div className="bg-[#482046] text-white py-6 px-4 text-center rounded-[2px] shadow-sm">
               <h2 className="text-[18px] md:text-[22px] font-bold tracking-wide">
-                Leading Corporate Event Management Company In Delhi, Gurgaon & NCR
+                Leading Corporate Event Management Company In Pune & Pan India
               </h2>
             </div>
 
             {/* Intro Paragraph */}
             <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-              EMG Showmakerz Pvt. Ltd. is a premier, <strong className="text-[#333]">18-year experienced</strong> <Link href="#" className="text-[#008484] hover:underline font-semibold">event management company</Link> based in Delhi NCR, specializing in corporate events, conferences, annual celebrations, <Link href="#" className="text-[#008484] hover:underline font-semibold">employee engagement programs</Link>, and wedding event management services across India.
+              ColorKnit Events is a premier, <strong className="text-[#333]">18-year experienced</strong> <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">event management company</Link> based in Pune, specializing in corporate events, conferences, annual celebrations, <Link href="/employee-engagement" className="text-[#008484] hover:underline font-semibold">employee engagement programs</Link>, and event production services across India.
             </p>
 
             {/* Blockquote */}
             <div className="bg-[#f0f0f0] border-l-[4px] border-[#00a8a8] p-6 text-[#555] text-[14px] leading-[1.8] font-medium rounded-r-[2px]">
-              "Welcome to Showmakerz — your trusted partner for creating impactful corporate events and memorable celebrations. With years of experience in event planning and production, we deliver innovative event experiences that strengthen brands and leave lasting impressions."
+              &ldquo;Welcome to ColorKnit Events — your trusted partner for creating impactful corporate events and memorable celebrations. With years of experience in event planning and production, we deliver innovative event experiences that strengthen brands and leave lasting impressions.&rdquo;
             </div>
 
             {/* Main Content Area */}
@@ -95,19 +106,19 @@ export default function Gallery() {
               </h3>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                Over the last 18 years, we have successfully delivered more than <strong className="text-[#333]">3,600+ event projects</strong> for multinational companies, FMCG brands, government organizations, educational institutions, and businesses of every scale. From conferences, <Link href="#" className="text-[#008484] hover:underline font-semibold">product launches</Link>, award ceremonies, and gala dinners to <Link href="#" className="text-[#008484] hover:underline font-semibold">annual day celebrations</Link>, team-building activities, and corporate entertainment events — we have managed events of every format, size, and complexity.
+                Over the last 18 years, we have successfully delivered more than <strong className="text-[#333]">3,600+ event projects</strong> for multinational companies, FMCG brands, government organizations, educational institutions, and businesses of every scale. From conferences, <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">product launches</Link>, award ceremonies, and gala dinners to <Link href="/annual-day-gala-events" className="text-[#008484] hover:underline font-semibold">annual day celebrations</Link>, team-building activities, and corporate entertainment events — we have managed events of every format, size, and complexity.
               </p>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                This event gallery showcases selected moments from our corporate events images, highlighting our expertise in event planning, <Link href="#" className="text-[#008484] hover:underline font-semibold">stage production</Link>, branding, décor, entertainment, and audience engagement. Browse through our <strong className="text-[#333]">event pictures</strong> for inspiration and discover how we transform ideas into successful event experiences.
+                This event gallery showcases selected moments from our corporate events images, highlighting our expertise in event planning, <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">stage production</Link>, branding, décor, entertainment, and audience engagement. Browse through our <strong className="text-[#333]">event pictures</strong> for inspiration and discover how we transform ideas into successful event experiences.
               </p>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                Our experienced team of <Link href="#" className="text-[#008484] hover:underline font-semibold">event planners</Link>, designers, and production managers works closely with clients to deliver creative concepts, seamless execution, and memorable guest experiences. Whether it is a leadership summit, <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate conference</Link>, themed celebration, or <Link href="#" className="text-[#008484] hover:underline font-semibold">large-scale business event</Link>, we ensure every detail is professionally managed from planning to on-site coordination.
+                Our experienced team of <Link href="/about" className="text-[#008484] hover:underline font-semibold">event planners</Link>, designers, and production managers works closely with clients to deliver creative concepts, seamless execution, and memorable guest experiences. Whether it is a leadership summit, <Link href="/services/mice" className="text-[#008484] hover:underline font-semibold">corporate conference</Link>, themed celebration, or <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">large-scale business event</Link>, we ensure every detail is professionally managed from planning to on-site coordination.
               </p>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                At Showmakerz, we provide complete event management solutions including stage setup, event branding, lighting, AV production, sound systems, venue décor, <Link href="#" className="text-[#008484] hover:underline font-semibold">artist management</Link>, and entertainment services. Whether you need a simple professional setup or a large-scale themed production, our team ensures your event stands out with creativity, precision, and flawless execution.
+                At ColorKnit Events, we provide complete event management solutions including stage setup, event branding, lighting, AV production, sound systems, venue décor, <Link href="/services" className="text-[#008484] hover:underline font-semibold">artist management</Link>, and entertainment services. Whether you need a simple professional setup or a large-scale themed production, our team ensures your event stands out with creativity, precision, and flawless execution.
               </p>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
@@ -117,7 +128,7 @@ export default function Gallery() {
             
             {/* Button */}
             <div className="flex justify-center mt-6">
-              <Link href="#" className="bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3 text-[13px] font-bold tracking-wide uppercase transition-colors rounded-[2px] shadow-sm">
+              <Link href="/contact" className="bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3 text-[13px] font-bold tracking-wide uppercase transition-colors rounded-[2px] shadow-sm">
                 CONTACT US FOR YOUR EVENT REQUIREMENT
               </Link>
             </div>
@@ -131,7 +142,7 @@ export default function Gallery() {
       <Footer 
         companyDescription={
           <p className="leading-relaxed mb-6 font-medium">
-            Explore the Showmakerz Event Gallery to see our creativity in action. From grand corporate events to vibrant theme parties, our curated portfolio showcases our expertise, attention to detail, and passion for creating memorable experiences. Let our past inspire your next event.
+            Explore the ColorKnit Events Gallery to see our creativity in action. From grand corporate events to vibrant theme parties, our curated portfolio showcases our expertise, attention to detail, and passion for creating memorable experiences. Let our past inspire your next event.
           </p>
         } 
       />

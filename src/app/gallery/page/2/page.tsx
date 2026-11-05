@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRightCircle, ArrowRight, Phone, MessageCircle, Mail } from "lucide-react";
 import Header from "@/components/Header";
@@ -5,9 +6,19 @@ import Footer from "@/components/Footer";
 import GalleryGrid from "@/components/GalleryGrid";
 import PartnerBanner from "@/components/PartnerBanner";
 
-export const metadata = {
-  title: "HR & Admin Events Gallery | EMG Showmakerz",
-  description: "Browse our extensive gallery of HR and Admin initiative events, team-building activities, town halls, and more.",
+export const metadata: Metadata = {
+  title: "HR & Team Engagement Event Gallery | ColorKnit Events Pune",
+  description: "Browse our gallery of HR and Admin corporate initiative events, employee engagement activities, offsites, town halls, and team celebrations.",
+  alternates: {
+    canonical: "https://www.colorknit.in/gallery/page/2",
+  },
+  openGraph: {
+    title: "HR & Team Engagement Event Gallery | ColorKnit Events Pune",
+    description: "Browse our gallery of HR and Admin corporate initiative events, employee engagement activities, offsites, town halls, and team celebrations.",
+    url: "https://www.colorknit.in/gallery/page/2",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 const galleryItemsPage2 = [
@@ -107,7 +118,7 @@ export default function GalleryPage2() {
                       Modern organizations increasingly use experiential activities, team interactions, and corporate events to strengthen employee morale, improve workplace culture, and encourage collaboration.
                     </p>
                     <p>
-                      As a trusted <Link href="#" className="text-[#008484] font-semibold hover:underline">corporate event management company</Link>, Showmakerz designs engaging employee experiences that enhance participation, communication, and overall employee satisfaction.
+                      As a trusted <Link href="/corporate-events" className="text-[#008484] font-semibold hover:underline">corporate event management company in Pune</Link>, ColorKnit Events designs engaging employee experiences that enhance participation, communication, and overall employee satisfaction.
                     </p>
                   </div>
                 </div>
@@ -154,20 +165,20 @@ export default function GalleryPage2() {
 
                 <div className="mt-10">
                   <h3 className="text-[#008484] text-[18px] md:text-[20px] font-bold mb-4">
-                    Plan Your Employee Engagement Event with Showmakerz
+                    Plan Your Employee Engagement Event with ColorKnit Events
                   </h3>
                   <div className="text-[#555] text-[13.5px] leading-[1.8] font-medium space-y-5">
                     <p>
                       Create experiences that not only entertain employees and their families but also strengthen team spirit, improve workplace culture, and build a more connected organization.
                     </p>
                     <p>
-                      As one of the experienced <Link href="#" className="text-[#008484] font-semibold hover:underline">event management companies in Delhi</Link>, Showmakerz specializes in planning engaging, professionally managed, and result-oriented corporate events tailored to your company culture, objectives, and budget.
+                      As one of the experienced <Link href="/corporate-events" className="text-[#008484] font-semibold hover:underline">event management companies in Pune</Link>, ColorKnit Events specializes in planning engaging, professionally managed, and result-oriented corporate events tailored to your company culture, objectives, and budget.
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-14 flex justify-center">
-                  <Link href="#" className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
+                  <Link href="/contact" className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider">
                     SHARE YOUR BRIEFS
                     <ArrowRight size={18} strokeWidth={2.5} />
                   </Link>
@@ -244,7 +255,7 @@ export default function GalleryPage2() {
         companyDescription={
           <>
             <p className="leading-relaxed mb-4 font-medium">
-              Looking for efficient, engaging & inspiring event solutions for your HR and administrative needs? Showmakerz specializes in organizing impactful HR and admin events that foster team collaboration, enhance employee engagement, and streamline administrative functions.
+              Looking for efficient, engaging & inspiring event solutions for your HR and administrative needs? ColorKnit Events specializes in organizing impactful HR and admin events that foster team collaboration, enhance employee engagement, and streamline administrative functions.
             </p>
             <p className="leading-relaxed mb-6 font-medium">
               Let us handle the logistics while you focus on your team's growth and success.

@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "Event Management Blog & Guides | ColorKnit Events Pune",
   description:
     "Expert insights, planning guides, and industry trends on corporate events, family days, conferences, exhibition management, and event technology in Pune.",
+  alternates: {
+    canonical: "https://www.colorknit.in/blog",
+  },
+  openGraph: {
+    title: "Event Management Blog & Guides | ColorKnit Events Pune",
+    description:
+      "Expert insights, planning guides, and industry trends on corporate events, family days, conferences, exhibition management, and event technology in Pune.",
+    url: "https://www.colorknit.in/blog",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Event Management Blog & Guides | ColorKnit Events Pune",
+    description:
+      "Expert insights, planning guides, and industry trends on corporate events, family days, conferences, exhibition management, and event technology in Pune.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function BlogPage() {

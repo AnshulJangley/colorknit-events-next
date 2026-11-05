@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Phone, MessageCircle, Mail, Check } from "lucide-react";
@@ -12,8 +13,8 @@ const townHallFaqs = [
     answer: "A corporate town hall is a company-wide meeting where leadership communicates key updates, strategic goals, and organizational milestones to all employees. It fosters transparency, alignment, and open dialogue within the organization."
   },
   {
-    question: "Do you organize town hall events in Delhi, Gurgaon and Noida?",
-    answer: "Yes, we organize professional town hall events across Delhi, Gurgaon, Noida, and the entire NCR region, handling everything from venue setup and AV production to content design and live streaming."
+    question: "Do you organize town hall events in Pune and across India?",
+    answer: "Yes, we organize professional town hall events across Pune, Mumbai, Bengaluru, Hyderabad, and pan India, handling everything from venue setup and AV production to content design and live streaming."
   },
   {
     question: "What is a Rewards & Recognition (R&R) event?",
@@ -37,9 +38,19 @@ const townHallFaqs = [
   }
 ];
 
-export const metadata = {
-  title: "Town Hall Event Organizer in Delhi NCR | EMG Showmakerz",
-  description: "Professional Town Hall & R&R Event Management Company in Delhi, Gurgaon & Noida",
+export const metadata: Metadata = {
+  title: "Town Hall & R&R Event Organisers in Pune | ColorKnit Events",
+  description: "Professional Town Hall and Rewards & Recognition (R&R) event management company in Pune & Pan India. Stage fabrication, AV production, live streaming and award trophies.",
+  alternates: {
+    canonical: "https://www.colorknit.in/town-hall-rr",
+  },
+  openGraph: {
+    title: "Town Hall & R&R Event Organisers in Pune | ColorKnit Events",
+    description: "Professional Town Hall and Rewards & Recognition (R&R) event management company in Pune & Pan India. Stage fabrication, AV production, live streaming and award trophies.",
+    url: "https://www.colorknit.in/town-hall-rr",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function TownHallRRPage() {
@@ -52,7 +63,7 @@ export default function TownHallRRPage() {
         <section className="w-full bg-gradient-to-r from-[#170a1c] via-[#1a0f22] to-[#120815] py-24 flex flex-col items-center justify-center min-h-[300px]">
           <div className="text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
             <h1 className="text-white text-[22px] md:text-[30px] lg:text-[36px] font-bold uppercase tracking-wide mb-6">
-              TOWN HALL EVENT ORGANIZER IN DELHI NCR
+              TOWN HALL EVENT ORGANIZERS IN PUNE & PAN INDIA
             </h1>
 
             {/* Breadcrumb */}
@@ -112,7 +123,7 @@ export default function TownHallRRPage() {
                   <li>Absolute alignment across departments regarding organizational targets, values, and vision.</li>
                 </ul>
                 <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium mb-4">
-                  Showmakerz is a premier <Link href="#" className="text-[#008484] font-semibold hover:underline">event management company</Link> in Delhi, Gurgaon, and Noida. We provide the end-to-end production infrastructure needed to deliver a seamless corporate town hall.
+                  ColorKnit Events is a premier <Link href="/corporate-events" className="text-[#008484] font-semibold hover:underline">event management company in Pune</Link>. We provide the end-to-end production infrastructure needed to deliver a seamless corporate town hall.
                 </p>
                 <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
                   Planning your next internal brief or <strong>R&R ceremony</strong>? Connect with us for customized staging concepts and competitive cost estimates.
@@ -281,33 +292,33 @@ export default function TownHallRRPage() {
                 How We Can Help You
               </h4>
               <p className="text-[#555] text-[13px] md:text-[14px] leading-[1.8] font-medium mb-8 px-4 md:px-12">
-                Showmakerz is a dominant <strong>townhall event organizer in Delhi Gurgaon NCR</strong>. As a full-service <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate event management company</Link>, we provide comprehensive logistical support for employee assemblies.
+                ColorKnit Events is a leading <strong>town hall event organizer in Pune and across India</strong>. As a full-service <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">corporate event management company</Link>, we provide comprehensive logistical support for employee assemblies.
               </p>
 
               {/* Checklist */}
               <ul className="text-[#555] text-[13px] md:text-[14px] leading-[1.8] font-medium space-y-4 mb-10 mx-auto max-w-2xl text-left">
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#008484] shrink-0 mt-[2px]" />
-                  <span><Link href="#" className="text-[#008484] hover:underline font-semibold">Suggest and source the ideal venue</Link> with optimized commercial contract rates.</span>
+                  <span><Link href="/contact" className="text-[#008484] hover:underline font-semibold">Suggest and source the ideal venue</Link> with optimized commercial contract rates.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#008484] shrink-0 mt-[2px]" />
-                  <span>Design and fabricate custom, high-impact <Link href="#" className="text-[#008484] hover:underline font-semibold">event stage setups</Link>.</span>
+                  <span>Design and fabricate custom, high-impact <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">event stage setups</Link>.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#008484] shrink-0 mt-[2px]" />
-                  <span>Deliver premium, end-to-end <Link href="#" className="text-[#008484] hover:underline font-semibold">audio-visual technical production support</Link>.</span>
+                  <span>Deliver premium, end-to-end <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">audio-visual technical production support</Link>.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check size={18} className="text-[#008484] shrink-0 mt-[2px]" />
-                  <span>Manage bulk logistics for <Link href="#" className="text-[#008484] hover:underline font-semibold">procuring high-end shields and corporate trophies</Link>.</span>
+                  <span>Manage bulk logistics for <Link href="/services/corporate-gifting" className="text-[#008484] hover:underline font-semibold">procuring high-end shields and corporate trophies</Link>.</span>
                 </li>
               </ul>
 
               {/* CTA Button */}
               <div>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
                 >
                   PLAN YOUR TOWN HALL EVENT
@@ -324,7 +335,7 @@ export default function TownHallRRPage() {
 
       <Footer companyDescription={
         <p className="leading-relaxed mb-4 font-medium text-[#555]">
-          As trusted corporate event planners, Showmakerz delivers professional Town Hall event solutions across Delhi NCR. We ensure every element&mdash;from content flow to AV setup&mdash;supports your goals of connection, communication, and company culture.
+          As trusted corporate event planners, ColorKnit Events delivers professional Town Hall and R&R event solutions across Pune, Mumbai, and pan India. We ensure every element&mdash;from content flow to AV setup&mdash;supports your goals of connection, communication, and company culture.
         </p>
       } />
     </>

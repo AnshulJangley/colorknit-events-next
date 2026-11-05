@@ -28,9 +28,47 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const postUrl = `https://www.colorknit.in/blog/${post.slug}`;
+  const imageUrl = post.image.startsWith("http")
+    ? post.image
+    : `https://www.colorknit.in${post.image}`;
+
   return {
     title: `${post.title} | ColorKnit Events Pune`,
     description: post.excerpt,
+    keywords: [
+      post.category,
+      "event management Pune",
+      "corporate events Pune",
+      post.title.toLowerCase(),
+      "ColorKnit events",
+    ],
+    alternates: {
+      canonical: postUrl,
+    },
+    openGraph: {
+      title: `${post.title} | ColorKnit Events Pune`,
+      description: post.excerpt,
+      url: postUrl,
+      type: "article",
+      publishedTime: post.date,
+      authors: ["ColorKnit Editorial Team"],
+      siteName: "ColorKnit Events Pune",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | ColorKnit Events Pune`,
+      description: post.excerpt,
+      images: [imageUrl],
+    },
   };
 }
 
@@ -42,12 +80,46 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
+  const postUrl = `https://www.colorknit.in/blog/${post.slug}`;
+  const imageUrl = post.image.startsWith("http")
+    ? post.image
+    : `https://www.colorknit.in${post.image}`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: imageUrl,
+    datePublished: post.date,
+    author: {
+      "@type": "Organization",
+      name: "ColorKnit Editorial Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "ColorKnit Events Pune",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.colorknit.in/images/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+  };
+
   const relatedPosts = blogPosts
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <main className="w-full flex-grow bg-white">

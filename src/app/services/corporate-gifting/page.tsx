@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   title: "Corporate Gifting Services in Pune | Customized Corporate Gifts – ColorKnit",
   description:
     "Looking for corporate gifting services in Pune? ColorKnit offers employee welcome kits, festive gifts, customized corporate gifts, return gifts, trophies and awards for businesses.",
+  alternates: {
+    canonical: "https://www.colorknit.in/services/corporate-gifting",
+  },
+  openGraph: {
+    title: "Corporate Gifting Services in Pune | Customized Corporate Gifts – ColorKnit",
+    description:
+      "Looking for corporate gifting services in Pune? ColorKnit offers employee welcome kits, festive gifts, customized corporate gifts, return gifts, trophies and awards for businesses.",
+    url: "https://www.colorknit.in/services/corporate-gifting",
+    type: "website",
+    images: ["/images/og-image.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Corporate Gifting Services in Pune | Customized Corporate Gifts – ColorKnit",
+    description:
+      "Looking for corporate gifting services in Pune? ColorKnit offers employee welcome kits, festive gifts, customized corporate gifts, return gifts, trophies and awards for businesses.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function CorporateGiftingPage() {
