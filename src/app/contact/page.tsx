@@ -30,6 +30,7 @@ export default function ContactPage() {
     email: '',
     phone: '',
     city: '',
+    date: '',
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
@@ -48,6 +49,7 @@ export default function ContactPage() {
       `*Email Address:* ${form.email}`,
       `*Phone Number:* ${form.phone}`,
       form.city ? `*Preferred City:* ${form.city}` : '',
+      form.date ? `*Preferred Date:* ${form.date}` : '',
       form.message ? `*Message:* ${form.message}` : '',
     ].filter(Boolean);
 
@@ -95,7 +97,7 @@ export default function ContactPage() {
                       <button
                         onClick={() => {
                           setSubmitted(false);
-                          setForm({ name: '', email: '', phone: '', city: '', message: '' });
+                          setForm({ name: '', email: '', phone: '', city: '', date: '', message: '' });
                         }}
                         className="inline-flex items-center gap-2 border border-gray-300 hover:border-gray-500 text-gray-700 px-6 py-3 rounded-full text-[13px] font-bold tracking-wider uppercase transition cursor-pointer"
                       >
@@ -171,18 +173,32 @@ export default function ContactPage() {
                         />
                       </div>
 
-                      {/* Preferred City */}
-                      <div>
-                        <label className="text-[13px] font-medium text-gray-700 block mb-1.5">
-                          Preferred City
-                        </label>
-                        <input
-                          type="text"
-                          value={form.city}
-                          onChange={(e) => update('city', e.target.value)}
-                          placeholder="e.g. Pune, Mumbai, Goa, Delhi, Bengaluru..."
-                          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14.5px] text-gray-800 placeholder:text-gray-300 focus:outline-none focus:border-[#800020] focus:ring-2 focus:ring-[#800020]/15 transition"
-                        />
+                      {/* Preferred City & Preferred Date */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <label className="text-[13px] font-medium text-gray-700 block mb-1.5">
+                            Preferred City
+                          </label>
+                          <input
+                            type="text"
+                            value={form.city}
+                            onChange={(e) => update('city', e.target.value)}
+                            placeholder="e.g. Pune, Mumbai, Goa..."
+                            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14.5px] text-gray-800 placeholder:text-gray-300 focus:outline-none focus:border-[#800020] focus:ring-2 focus:ring-[#800020]/15 transition"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-[13px] font-medium text-gray-700 block mb-1.5">
+                            Preferred Date
+                          </label>
+                          <input
+                            type="date"
+                            value={form.date}
+                            onChange={(e) => update('date', e.target.value)}
+                            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14.5px] text-gray-800 focus:outline-none focus:border-[#800020] focus:ring-2 focus:ring-[#800020]/15 transition bg-white"
+                          />
+                        </div>
                       </div>
 
                       {/* Optional Message */}

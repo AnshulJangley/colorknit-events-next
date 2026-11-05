@@ -88,6 +88,9 @@ export const metadata: Metadata = {
     creator: "@colorknit",
   },
   category: "Event Management",
+  verification: {
+    google: "MCBXfFfTX-5oW_kfXE08zPsd7vl0JROhLje2hEMv-lA",
+  },
 };
 
 const jsonLd = {
@@ -162,6 +165,7 @@ export default function RootLayout({
         <meta name="geo.position" content="18.5204;73.8567" />
         <meta name="ICBM" content="18.5204, 73.8567" />
         <meta name="theme-color" content="#2b032d" />
+        <meta name="google-site-verification" content="MCBXfFfTX-5oW_kfXE08zPsd7vl0JROhLje2hEMv-lA" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google tag (gtag.js) */}
