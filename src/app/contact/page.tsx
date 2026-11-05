@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   MapPin,
   Phone,
@@ -67,36 +66,8 @@ export default function ContactPage() {
       <Header />
 
       <main className="flex-grow">
-        {/* Hero Section */}
-        <div className="relative h-[280px] md:h-[340px] overflow-hidden bg-[#170a1c]">
-          <Image
-            src="/images/photo5.jpg"
-            alt="Contact ColorKnit Events Pune"
-            fill
-            sizes="100vw"
-            className="object-cover opacity-35"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#170a1c]" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pt-10">
-            <span className="font-cinzel text-[12px] uppercase tracking-[0.25em] text-[#ff9999] mb-3">
-              Let&apos;s Connect
-            </span>
-            <h1 className="font-cinzel text-3xl md:text-5xl font-bold text-white tracking-wide">
-              Get In Touch
-            </h1>
-            <nav className="mt-4 text-[13px] text-white/70 flex items-center gap-2">
-              <Link href="/" className="hover:text-white transition-colors">
-                Home
-              </Link>
-              <span>/</span>
-              <span className="text-[#ff6b6b]">Contact Us</span>
-            </nav>
-          </div>
-        </div>
-
         {/* Main Content Section */}
-        <section id="enquiry" className="py-14 md:py-20 px-4">
+        <section id="enquiry" className="py-10 md:py-16 px-4">
           <div className="max-w-[1240px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-10 lg:gap-12 items-start">
               {/* Left Column: Basic Info Form */}
