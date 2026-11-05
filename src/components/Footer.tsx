@@ -106,12 +106,22 @@ export default function Footer({ companyDescription }: FooterProps) {
           </div>
         </div>
         
-        {/* Bottom Bar */}
-        <div className="max-w-[1200px] mx-auto border-t border-gray-300 pt-6 flex flex-wrap justify-center gap-6 md:gap-12 font-semibold text-[13px] text-gray-700">
-          {["Facebook", "X (Twitter)", "YouTube", "LinkedIn", "Instagram"].map((social, idx) => (
-            <Link key={idx} href="#" className="hover:text-[#007b7b] transition-colors">
-              {social}
-            </Link>
+        {/* Bottom Bar Social Links */}
+        <div className="max-w-[1200px] mx-auto border-t border-gray-300 pt-6 flex flex-wrap justify-center gap-6 md:gap-10 font-semibold text-[13px] text-gray-700">
+          {[
+            { name: "Facebook", href: "https://www.facebook.com/ColorKnitEvents/" },
+            { name: "YouTube", href: "https://www.youtube.com/@ColorKnitEvents" },
+            { name: "LinkedIn", href: "https://www.linkedin.com/company/colorknit-events-n-production/" },
+          ].map((social, idx) => (
+            <a
+              key={idx}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#007b7b] transition-colors flex items-center gap-1.5"
+            >
+              {social.name}
+            </a>
           ))}
         </div>
       </footer>

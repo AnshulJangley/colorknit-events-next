@@ -303,6 +303,39 @@ export default function ContactClient() {
                         </p>
                       </div>
                     </div>
+
+                    {/* Follow Us / Social Profiles */}
+                    <div className="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-3">
+                      <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
+                        FOLLOW US:
+                      </span>
+                      <a
+                        href="https://www.facebook.com/ColorKnitEvents/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[12.5px] font-semibold text-[#800020] hover:underline"
+                      >
+                        Facebook
+                      </a>
+                      <span className="text-gray-300">•</span>
+                      <a
+                        href="https://www.youtube.com/@ColorKnitEvents"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[12.5px] font-semibold text-[#800020] hover:underline"
+                      >
+                        YouTube
+                      </a>
+                      <span className="text-gray-300">•</span>
+                      <a
+                        href="https://www.linkedin.com/company/colorknit-events-n-production/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[12.5px] font-semibold text-[#800020] hover:underline"
+                      >
+                        LinkedIn
+                      </a>
+                    </div>
                   </div>
                 </div>
 

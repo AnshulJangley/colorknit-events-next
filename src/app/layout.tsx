@@ -120,9 +120,9 @@ const jsonLd = {
     longitude: "73.8567",
   },
   sameAs: [
-    "https://www.facebook.com/colorknit",
-    "https://www.instagram.com/colorknit",
-    "https://www.linkedin.com/company/colorknit",
+    "https://www.facebook.com/ColorKnitEvents/",
+    "https://www.youtube.com/@ColorKnitEvents",
+    "https://www.linkedin.com/company/colorknit-events-n-production/",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
