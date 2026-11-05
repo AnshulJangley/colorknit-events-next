@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Outfit, Geist_Mono, Cinzel } from "next/font/google";
 import "./globals.css";
 
@@ -162,7 +163,22 @@ export default function RootLayout({
         <meta name="ICBM" content="18.5204, 73.8567" />
         <meta name="theme-color" content="#2b032d" />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18556087773"
+        />
+        <Script id="google-tag-aw" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18556087773');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
