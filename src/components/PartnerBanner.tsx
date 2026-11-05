@@ -10,7 +10,7 @@ export default function PartnerBanner({
 }: PartnerBannerProps) {
   return (
     <section
-      className="relative py-16 px-4 text-center bg-cover bg-center bg-no-repeat"
+      className="relative py-16 px-4 text-center bg-cover bg-center bg-no-repeat w-full max-w-full overflow-x-hidden"
       style={{ backgroundImage: "url('/images/pexels-steve-29708309.jpg')" }}
     >
       {/* Subtle overlay for text readability */}
@@ -23,7 +23,7 @@ export default function PartnerBanner({
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-4xl mx-auto w-full">
           <Link
-            href="tel:+919811121153"
+            href="tel:+919271114024"
             className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm"
           >
             <Phone size={17} fill="currentColor" />
@@ -31,7 +31,7 @@ export default function PartnerBanner({
           </Link>
 
           <Link
-            href="https://wa.me/919811121153"
+            href="https://wa.me/919271114024"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border border-white text-white px-7 py-3 rounded-[3px] text-[13px] font-semibold tracking-wider hover:bg-white/10 transition-colors uppercase w-full sm:w-auto backdrop-blur-sm"

@@ -62,10 +62,10 @@ export default function ContactClient() {
   const mapUrl = `https://www.google.com/maps/search/?api=1&query=Fortune+House+Baner+Pashan+Link+Rd+Baner+Pune+Maharashtra+411045`;
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#fdfbf9]">
+    <div className="flex flex-col min-h-screen bg-[#fdfbf9] w-full max-w-full overflow-x-hidden">
       <Header />
 
-      <main className="flex-grow">
+      <main className="flex-grow w-full max-w-full overflow-x-hidden">
         {/* Main Content Section */}
         <section id="enquiry" className="py-10 md:py-16 px-4">
           <div className="max-w-[1240px] mx-auto">
@@ -356,3 +356,4 @@ export default function ContactClient() {
     </div>
   );
 }
+

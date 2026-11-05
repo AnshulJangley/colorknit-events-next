@@ -152,7 +152,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${geistMono.variable} ${cinzel.variable} h-full antialiased`}
+      className={`${outfit.variable} ${geistMono.variable} ${cinzel.variable} h-full antialiased overflow-x-hidden`}
     >
       <head>
         <script
@@ -167,7 +167,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#2b032d" />
         <meta name="google-site-verification" content="MCBXfFfTX-5oW_kfXE08zPsd7vl0JROhLje2hEMv-lA" />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden w-full max-w-full">
         {/* Google tag (gtag.js) */}
         <Script
           strategy="afterInteractive"

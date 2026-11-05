@@ -15,7 +15,18 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
   body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
     font-family: var(--font-sans);
     background-color: #f4f4f4;
     color: #333;

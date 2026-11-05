@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronsRight, ChevronRight, MapPin, Phone, Smartphone, Mail, ChevronUp } from "lucide-react";
+import { ChevronsRight, ChevronRight, MapPin, Phone, Mail, ChevronUp } from "lucide-react";
 
 interface FooterProps {
   companyDescription?: React.ReactNode;
@@ -9,22 +9,22 @@ export default function Footer({ companyDescription }: FooterProps) {
   return (
     <>
       {/* Footer */}
-      <footer className="bg-[#e5e5e5] pt-16 pb-8 px-4 md:px-8 text-[13.5px] text-gray-700">
+      <footer className="bg-[#e5e5e5] pt-16 pb-8 px-4 md:px-8 text-[13.5px] text-gray-700 w-full max-w-full overflow-x-hidden">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Column 1 */}
           <div>
-            <h4 className="text-[15px] font-bold text-gray-800 mb-6">EMG SHOWMAKERZ PVT. LTD.</h4>
+            <h4 className="text-[15px] font-bold text-gray-800 mb-6 tracking-wide">COLORKNIT EVENTS PVT. LTD.</h4>
             {companyDescription || (
               <>
                 <p className="leading-relaxed mb-4 font-medium">
-                  Transform your workplace with our dynamic employee engagement programs. We tailor innovative solutions to boost morale, foster collaboration, and drive performance, ensuring a motivated and productive team.
+                  Transform your workplace with our dynamic employee engagement programs and corporate event planning. We tailor innovative solutions to boost morale, foster collaboration, and drive performance across your organization.
                 </p>
                 <p className="leading-relaxed mb-6 font-medium">
-                  Discover how we can help you create a thriving work environment today. We are proud to be consistently recognized among the <Link href="#" className="text-[#008484] hover:underline font-semibold">top 10 event management companies in Delhi, Gurgaon & NCR</Link>.
+                  Discover how we can help you create a thriving work environment today. Headquartered in Pune and recognized among the premier corporate event management companies across Pune, Mumbai & Pan India.
                 </p>
               </>
             )}
-            <Link href="#" className="inline-flex items-center gap-1 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-5 py-3 font-bold text-[12px] uppercase transition-colors shadow-sm mt-2">
+            <Link href="/contact" className="inline-flex items-center gap-1 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-5 py-3 font-bold text-[12px] uppercase transition-colors shadow-sm mt-2">
               REQUEST A CALL BACK
               <ChevronsRight size={16} />
             </Link>
@@ -32,13 +32,22 @@ export default function Footer({ companyDescription }: FooterProps) {
           
           {/* Column 2 */}
           <div>
-            <h4 className="text-[15px] font-bold text-gray-800 mb-6">QUICK LINKS</h4>
+            <h4 className="text-[15px] font-bold text-gray-800 mb-6 tracking-wide">QUICK LINKS</h4>
             <ul className="flex flex-col gap-3">
-              {["About Us", "Our Profile", "Our Clientèle", "View Gallery", "Why Us", "Work With Us", "Reach Us"].map((link, idx) => (
+              {[
+                { name: "About Us", href: "/about" },
+                { name: "Corporate Events", href: "/corporate-events" },
+                { name: "Annual Day Celebrations", href: "/annual-day-gala-events" },
+                { name: "Employee Engagement", href: "/employee-engagement" },
+                { name: "Family Day Outings", href: "/family-day-outing" },
+                { name: "Town Hall & R&R", href: "/town-hall-rr" },
+                { name: "View Gallery", href: "/gallery" },
+                { name: "Contact Us", href: "/contact" },
+              ].map((link, idx) => (
                 <li key={idx}>
-                  <Link href="#" className="flex items-center gap-2 text-[#007b7b] hover:text-[#005a5a] transition-colors font-medium">
+                  <Link href={link.href} className="flex items-center gap-2 text-[#007b7b] hover:text-[#005a5a] transition-colors font-medium">
                     <ChevronRight size={14} className="text-gray-500 shrink-0" />
-                    {link}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -47,13 +56,21 @@ export default function Footer({ companyDescription }: FooterProps) {
           
           {/* Column 3 */}
           <div>
-            <h4 className="text-[15px] font-bold text-gray-800 mb-6">POPULAR SERVICES</h4>
+            <h4 className="text-[15px] font-bold text-gray-800 mb-6 tracking-wide">POPULAR SERVICES</h4>
             <ul className="flex flex-col gap-3">
-              {["Event Management Services", "Event Management Company", "Corporate Event Planners", "Event Organisers in Delhi NCR", "Event Organisers in Gurgaon", "Event Organisers in Noida", "Event Planners in Delhi NCR"].map((link, idx) => (
+              {[
+                { name: "Corporate Event Management", href: "/corporate-events" },
+                { name: "MICE & Conferences", href: "/services/mice" },
+                { name: "Exhibition Stall Design", href: "/services/exhibitions" },
+                { name: "Corporate Gifting Pune", href: "/services/corporate-gifting" },
+                { name: "Sports Tournaments", href: "/services/sports" },
+                { name: "Luxury Weddings", href: "/services/weddings" },
+                { name: "All Event Services", href: "/services" },
+              ].map((link, idx) => (
                 <li key={idx}>
-                  <Link href="#" className="flex items-center gap-2 text-[#007b7b] hover:text-[#005a5a] transition-colors font-medium">
+                  <Link href={link.href} className="flex items-center gap-2 text-[#007b7b] hover:text-[#005a5a] transition-colors font-medium">
                     <ChevronRight size={14} className="text-gray-500 shrink-0" />
-                    {link}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -62,7 +79,7 @@ export default function Footer({ companyDescription }: FooterProps) {
           
           {/* Column 4 */}
           <div>
-            <h4 className="text-[15px] font-bold text-gray-800 mb-6">CONTACT US</h4>
+            <h4 className="text-[15px] font-bold text-gray-800 mb-6 tracking-wide">CONTACT US</h4>
             <ul className="flex flex-col gap-4 mb-6">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gray-800 shrink-0 mt-0.5" fill="currentColor" strokeWidth={1} />
@@ -100,9 +117,9 @@ export default function Footer({ companyDescription }: FooterProps) {
       </footer>
 
       {/* Copyright Bar */}
-      <div className="bg-[#222222] py-4 px-4 text-center text-[12.5px] text-gray-300 font-medium">
+      <div className="bg-[#222222] py-4 px-4 text-center text-[12.5px] text-gray-300 font-medium w-full max-w-full overflow-x-hidden">
         <div className="max-w-[1200px] mx-auto flex justify-center">
-          <p>© 2008-2026 SHOWMAKERZ ® | All Rights Reserved | Sitemap | Disclaimer & Privacy Policy</p>
+          <p className="break-words">© 2008-2026 COLORKNIT EVENTS PVT. LTD. ® | All Rights Reserved | Sitemap | Disclaimer & Privacy Policy</p>
         </div>
       </div>
 

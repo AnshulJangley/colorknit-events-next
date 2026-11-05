@@ -50,7 +50,7 @@ export default function EmployeeEngagement() {
     <>
       <Header />
       
-      <main className="w-full flex-grow">
+      <main className="w-full max-w-full overflow-x-hidden flex-grow">
         {/* Hero Section */}
         <section 
           className="relative flex flex-col items-center justify-center py-20 px-4 bg-[#120a17] min-h-[400px]"

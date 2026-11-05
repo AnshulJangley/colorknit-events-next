@@ -88,8 +88,8 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <header className="w-full">
-        <div className="bg-[#170a1c] text-white text-[12px] font-medium py-2 px-4 border-b border-white/10">
+      <header className="w-full max-w-full overflow-x-hidden">
+        <div className="bg-[#170a1c] text-white text-[12px] font-medium py-2 px-4 border-b border-white/10 w-full max-w-full">
           <div className="max-w-[1400px] mx-auto flex items-center justify-between">
             {/* Left Tagline (Desktop) */}
             <div className="hidden sm:flex items-center gap-2 text-gray-300 text-[11px] tracking-wider uppercase">
@@ -99,11 +99,11 @@ export default function Header() {
             {/* Right Quick Links & WhatsApp Button */}
             <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-3 md:gap-4 ml-auto">
               <Link
-                href="tel:+919811121153"
+                href="tel:+919271114024"
                 className="flex items-center gap-1.5 text-gray-200 hover:text-white transition-colors text-[11px] font-semibold tracking-wide"
               >
                 <Phone size={13} className="text-[#00a8a8]" />
-                <span className="hidden xs:inline">+91 98111 21153</span>
+                <span className="hidden xs:inline">+91 9271114024</span>
                 <span className="xs:hidden">Call</span>
               </Link>
 

@@ -53,10 +53,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen flex flex-col font-sans w-full max-w-full overflow-x-hidden">
       <Header />
       {/* Photo Grid */}
-      <main className="w-full">
+      <main className="w-full max-w-full overflow-x-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full">
           {images.map((src, index) => (
             <div key={index} className="relative w-full h-[300px] overflow-hidden group">
@@ -371,7 +371,7 @@ export default function Home() {
           </p>
           
           {/* Marquee Container */}
-          <div className="overflow-hidden w-full max-w-[100vw] relative py-4 group">
+          <div className="overflow-hidden w-full max-w-full relative py-4 group">
             <div className="flex w-max gap-6 px-4 text-left">
 
               {/* Track 1 */}

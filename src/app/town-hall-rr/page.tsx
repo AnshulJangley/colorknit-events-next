@@ -58,7 +58,7 @@ export default function TownHallRRPage() {
     <>
       <Header />
 
-      <main className="min-h-screen flex flex-col">
+      <main className="min-h-screen flex flex-col w-full max-w-full overflow-x-hidden">
         {/* Hero Section */}
         <section className="w-full bg-gradient-to-r from-[#170a1c] via-[#1a0f22] to-[#120815] py-24 flex flex-col items-center justify-center min-h-[300px]">
           <div className="text-center px-4 max-w-4xl mx-auto flex flex-col items-center">

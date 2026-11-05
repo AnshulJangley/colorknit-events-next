@@ -50,7 +50,7 @@ export default function GalleryPage2() {
     <>
       <Header />
       
-      <main className="w-full flex-grow">
+      <main className="w-full max-w-full overflow-x-hidden flex-grow">
         {/* Hero Section */}
         <section className="relative flex flex-col items-center justify-center py-20 md:py-28 px-4 bg-[#1a0f1c]">
           <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto text-center mt-6">
