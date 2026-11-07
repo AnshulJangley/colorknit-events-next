@@ -42,6 +42,7 @@ export default function Footer({ companyDescription }: FooterProps) {
                 { name: "Family Day Outings", href: "/family-day-outing" },
                 { name: "Town Hall & R&R", href: "/town-hall-rr" },
                 { name: "View Gallery", href: "/gallery" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
                 { name: "Contact Us", href: "/contact" },
               ].map((link, idx) => (
                 <li key={idx}>
@@ -128,8 +129,18 @@ export default function Footer({ companyDescription }: FooterProps) {
 
       {/* Copyright Bar */}
       <div className="bg-[#222222] py-4 px-4 text-center text-[12.5px] text-gray-300 font-medium w-full max-w-full overflow-x-hidden">
-        <div className="max-w-[1200px] mx-auto flex justify-center">
-          <p className="break-words">© 2008-2026 COLORKNIT EVENTS PVT. LTD. ® | All Rights Reserved | Sitemap | Disclaimer & Privacy Policy</p>
+        <div className="max-w-[1200px] mx-auto flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+          <span>© 2008-2026 COLORKNIT EVENTS PVT. LTD. ®</span>
+          <span className="hidden sm:inline">|</span>
+          <span>All Rights Reserved</span>
+          <span className="hidden sm:inline">|</span>
+          <Link href="/privacy-policy" className="hover:text-white underline underline-offset-2 transition-colors">
+            Privacy Policy
+          </Link>
+          <span className="hidden sm:inline">|</span>
+          <Link href="/contact" className="hover:text-white underline underline-offset-2 transition-colors">
+            Contact Us
+          </Link>
         </div>
       </div>
 

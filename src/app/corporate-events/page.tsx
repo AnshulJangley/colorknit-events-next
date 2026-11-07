@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, 
-  Check, 
-  Phone, 
-  MessageCircle, 
-  Mail, 
-  Compass, 
-  PiggyBank, 
-  MapPin, 
-  Wrench, 
-  Users, 
-  Sparkles, 
-  CalendarCheck, 
-  Award, 
-  Briefcase, 
-  Megaphone 
+import {
+  ArrowRight,
+  Check,
+  Phone,
+  MessageCircle,
+  Mail,
+  Compass,
+  PiggyBank,
+  MapPin,
+  Wrench,
+  Users,
+  Sparkles,
+  CalendarCheck,
+  Award,
+  Briefcase,
+  Megaphone
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -157,7 +157,7 @@ export default function CorporateEvents() {
 
       <main className="w-full flex-grow">
         {/* Hero Section */}
-        <section 
+        <section
           className="relative flex flex-col items-center justify-center py-24 md:py-32 px-4 bg-cover bg-center bg-no-repeat min-h-[580px]"
           style={{ backgroundImage: "url('/images/photo5.jpg')" }}
         >
@@ -189,15 +189,15 @@ export default function CorporateEvents() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Link 
-                href="#contact" 
+              <Link
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-[#008484] hover:bg-[#006e6e] text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase shadow-md rounded-[3px] hover:shadow-lg hover:-translate-y-0.5"
               >
                 Plan Your Corporate Event
                 <ArrowRight size={16} />
               </Link>
-              <Link 
-                href="#services" 
+              <Link
+                href="#services"
                 className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase rounded-[3px]"
               >
                 Explore Our Services
@@ -226,7 +226,7 @@ export default function CorporateEvents() {
               {pillars.map((pillar) => {
                 const IconComponent = pillar.icon;
                 return (
-                  <div 
+                  <div
                     key={pillar.num}
                     className="bg-white rounded-lg p-7 border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
                   >
@@ -273,16 +273,16 @@ export default function CorporateEvents() {
               {services.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group border border-gray-100"
                   >
                     <div className="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
-                      <Image 
-                        src={item.image} 
-                        alt={item.title} 
-                        fill 
-                        className="object-cover group-hover:scale-105 transition-transform duration-500" 
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute top-3 right-3 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#008484] shadow-sm">
                         <Icon size={18} />
@@ -298,8 +298,8 @@ export default function CorporateEvents() {
                         </p>
                       </div>
                       {item.link !== "#" ? (
-                        <Link 
-                          href={item.link} 
+                        <Link
+                          href={item.link}
                           className="inline-flex items-center gap-1.5 text-[12.5px] font-bold text-[#008484] hover:text-[#006666] uppercase tracking-wider transition-colors pt-2 border-t border-gray-100"
                         >
                           View Details <ArrowRight size={14} />
@@ -332,8 +332,8 @@ export default function CorporateEvents() {
 
                 <div className="flex flex-col gap-4 mb-8">
                   {whyChoosePoints.map((point, i) => (
-                    <div 
-                      key={i} 
+                    <div
+                      key={i}
                       className="flex items-center gap-3.5 bg-white p-4 rounded-md border border-gray-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)]"
                     >
                       <div className="w-6 h-6 rounded-full bg-[#e8f5e9] flex items-center justify-center shrink-0">
@@ -359,11 +359,11 @@ export default function CorporateEvents() {
               <div className="relative">
                 <div className="relative p-2.5 border-[8px] border-[#e2d5c8] bg-white rounded-lg shadow-xl mx-auto w-full max-w-[500px]">
                   <div className="relative w-full aspect-[4/3] rounded overflow-hidden">
-                    <Image 
-                      src="/images/photo5.jpg" 
-                      alt="Actual ColorKnit corporate event stage setup and audience" 
-                      fill 
-                      className="object-cover" 
+                    <Image
+                      src="/images/photo5.jpg"
+                      alt="Actual ColorKnit corporate event stage setup and audience"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                 </div>
@@ -390,7 +390,7 @@ export default function CorporateEvents() {
               Let&apos;s Plan Your Next Corporate Event
             </h2>
             <div className="w-[50px] h-[3px] bg-[#dc2626] mb-8"></div>
-            
+
             <p className="text-[#e2e2e2] text-[15px] md:text-[16px] leading-relaxed mb-4 max-w-2xl">
               Every business event has a purpose, whether it is bringing teams together, appreciating clients, connecting with channel partners or celebrating a company milestone. ColorKnit Events can help you plan the details around that purpose.
             </p>
@@ -399,17 +399,17 @@ export default function CorporateEvents() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-[#008484] hover:bg-[#006e6e] text-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all shadow-md hover:shadow-lg"
               >
                 <Mail size={16} />
                 Enquire About Your Event
               </Link>
-              
-              <Link 
-                href="https://wa.me/919811121153?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20discuss%20planning%20a%20corporate%20event." 
-                target="_blank" 
+
+              <Link
+                href="https://wa.me/919271114024?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20discuss%20planning%20a%20corporate%20event."
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all"
               >
