@@ -48,6 +48,14 @@ export const metadata: Metadata = {
   creator: "Colorknit Pvt Ltd",
   publisher: "Colorknit Pvt Ltd",
   metadataBase: new URL("https://www.colorknit.in"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: "/icon.png",
+    shortcut: "/favicon.ico",
+  },
   alternates: {
     canonical: "/",
   },
