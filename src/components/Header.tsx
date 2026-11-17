@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, ChevronDown, Menu, X, MessageCircle } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 
 // Official WhatsApp Vector Icon
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -22,55 +22,22 @@ function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
 interface MenuItem {
   title: string;
   href: string;
-  subItems?: { title: string; href: string }[];
 }
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openMobileSubmenu, setOpenMobileSubmenu] = useState<string | null>(null);
 
   const whatsappNumber = "919811121153";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20enquire%20about%20event%20planning.`;
 
   const menuItems: MenuItem[] = [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "About Us",
-      href: "/about",
-    },
-    {
-      title: "Services",
-      href: "/services",
-      subItems: [
-        { title: "All Services", href: "/services" },
-        { title: "Corporate Events", href: "/corporate-events" },
-        { title: "Exhibitions", href: "/services/exhibitions" },
-        { title: "Weddings", href: "/services/weddings" },
-        { title: "Corporate Gifting", href: "/services/corporate-gifting" },
-        { title: "Sports", href: "/services/sports" },
-        { title: "MICE", href: "/services/mice" },
-      ],
-    },
-    {
-      title: "Our Work",
-      href: "/gallery",
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
-      title: "Contact Us",
-      href: "/contact",
-    },
+    { title: "Home", href: "/" },
+    { title: "About Us", href: "/about" },
+    { title: "Services", href: "/services" },
+    { title: "Our Work", href: "/gallery" },
+    { title: "Blog", href: "/blog" },
+    { title: "Contact Us", href: "/contact" },
   ];
-
-  const toggleMobileSubmenu = (title: string) => {
-    setOpenMobileSubmenu(openMobileSubmenu === title ? null : title);
-  };
 
   return (
     <>
@@ -96,7 +63,7 @@ export default function Header() {
 
               <span className="text-gray-600">|</span>
 
-              {/* Top Bar WhatsApp Button (Visible on both Desktop and Mobile Top) */}
+              {/* Top Bar WhatsApp Button */}
               <Link
                 href={whatsappUrl}
                 target="_blank"
@@ -130,50 +97,16 @@ export default function Header() {
 
             {/* Desktop Navigation Links */}
             <ul className="hidden lg:flex items-center gap-7 text-[13.5px] font-bold tracking-wide text-gray-800">
-              {menuItems.map((item) => {
-                const hasSubmenu = item.subItems && item.subItems.length > 0;
-
-                if (!hasSubmenu) {
-                  return (
-                    <li key={item.title}>
-                      <Link
-                        href={item.href}
-                        className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                }
-
-                return (
-                  <li key={item.title} className="relative group">
-                    <Link
-                      href={item.href}
-                      className="hover:text-[#dc2626] transition-colors flex items-center gap-1 py-4 uppercase tracking-wider group-hover:text-[#dc2626]"
-                    >
-                      {item.title}
-                      <ChevronDown
-                        size={14}
-                        className="group-hover:rotate-180 transition-transform duration-200 text-gray-400 group-hover:text-[#dc2626]"
-                      />
-                    </Link>
-
-                    {/* Dropdown Menu */}
-                    <div className="absolute left-0 top-full -mt-1 w-72 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                      {item.subItems!.map((sub) => (
-                        <Link
-                          key={sub.title}
-                          href={sub.href}
-                          className="block px-4 py-2.5 text-[13px] text-gray-700 hover:text-[#dc2626] hover:bg-[#fef2f2] font-medium transition-colors border-b border-gray-50 last:border-b-0"
-                        >
-                          {sub.title}
-                        </Link>
-                      ))}
-                    </div>
-                  </li>
-                );
-              })}
+              {menuItems.map((item) => (
+                <li key={item.title}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             {/* Mobile Header Controls: Hamburger Toggle */}
@@ -188,76 +121,28 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Drawer Navigation */}
+          {/* Mobile Drawer Navigation (No scroll, clean direct links) */}
           {mobileMenuOpen && (
             <div className="lg:hidden mt-3 pt-3 border-t border-gray-100">
               <ul className="flex flex-col gap-1 pb-2">
-                {menuItems.map((item) => {
-                  const hasSubmenu = item.subItems && item.subItems.length > 0;
-                  const isSubOpen = openMobileSubmenu === item.title;
-
-                  if (!hasSubmenu) {
-                    return (
-                      <li key={item.title}>
-                        <Link
-                          href={item.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="block px-3 py-2.5 text-[14px] font-bold text-gray-800 hover:text-[#dc2626] hover:bg-gray-50 rounded uppercase tracking-wider"
-                        >
-                          {item.title}
-                        </Link>
-                      </li>
-                    );
-                  }
-
-                  return (
-                    <li key={item.title} className="flex flex-col">
-                      <div 
-                        onClick={() => toggleMobileSubmenu(item.title)}
-                        className="flex items-center justify-between px-3 py-2.5 rounded hover:bg-gray-50 cursor-pointer"
-                      >
-                        <span className="text-[14px] font-bold text-gray-800 hover:text-[#dc2626] uppercase tracking-wider flex-grow">
-                          {item.title}
-                        </span>
-                        <button
-                          type="button"
-                          className="p-2 text-gray-500 hover:text-[#dc2626]"
-                          aria-label={`Toggle ${item.title} subcategories`}
-                        >
-                          <ChevronDown
-                            size={18}
-                            className={`transition-transform duration-200 ${
-                              isSubOpen ? "rotate-180 text-[#dc2626]" : ""
-                            }`}
-                          />
-                        </button>
-                      </div>
-
-                      {/* Mobile Submenu Accordion */}
-                      {isSubOpen && (
-                        <div className="pl-6 pr-3 py-1 flex flex-col gap-1 bg-[#fef2f2] rounded-md my-1 border-l-2 border-[#dc2626]">
-                          {item.subItems!.map((sub) => (
-                            <Link
-                              key={sub.title}
-                              href={sub.href}
-                              onClick={() => setMobileMenuOpen(false)}
-                              className="py-2 text-[13px] font-medium text-gray-600 hover:text-[#dc2626] transition-colors"
-                            >
-                              • {sub.title}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </li>
-                  );
-                })}
+                {menuItems.map((item) => (
+                  <li key={item.title}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-[14px] font-bold text-gray-800 hover:text-[#dc2626] hover:bg-gray-50 rounded uppercase tracking-wider"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           )}
         </nav>
       </header>
 
-      {/* Floating On-Screen WhatsApp Action Button (Mobile & Desktop View) */}
+      {/* Floating On-Screen WhatsApp Action Button */}
       <aside aria-label="Quick WhatsApp Contact" className="fixed bottom-6 right-6 z-50 flex items-center group">
         <Link
           href={whatsappUrl}
@@ -266,9 +151,7 @@ export default function Header() {
           className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.6)] transition-all duration-300 hover:scale-110"
           aria-label="Chat on WhatsApp"
         >
-          {/* Subtle Pulse Animation Ring */}
           <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
-
           <WhatsAppIcon className="w-7 h-7 fill-white relative z-10" />
         </Link>
 
