@@ -45,6 +45,7 @@ export default function Header() {
       title: "Services",
       href: "/services",
       subItems: [
+        { title: "All Services", href: "/services" },
         { title: "Corporate Events", href: "/corporate-events" },
         { title: "Exhibitions", href: "/services/exhibitions" },
         { title: "Weddings", href: "/services/weddings" },
@@ -56,23 +57,10 @@ export default function Header() {
     {
       title: "Our Work",
       href: "/gallery",
-      subItems: [
-        { title: "Event Gallery", href: "/gallery" },
-        { title: "HR & Engagement Gallery", href: "/gallery/page/2" },
-      ],
     },
     {
       title: "Blog",
       href: "/blog",
-      subItems: [
-        { title: "Corporate Events in Pune", href: "/blog/corporate-event-management-in-pune" },
-        { title: "The Power of Exhibitions", href: "/blog/the-power-of-exhibitions-accelerating-progress" },
-        { title: "Pune's Wedding Market", href: "/blog/punes-wedding-market-innovation-and-tradition" },
-        { title: "Family Day Events Guide", href: "/blog/family-day-event-management-company-pune" },
-        { title: "Trends in Event Technology", href: "/blog/trends-in-event-technology" },
-        { title: "Event Planning: 7 Steps", href: "/blog/how-to-do-successful-event-planning" },
-        { title: "View All 14 Blog Articles", href: "/blog" },
-      ],
     },
     {
       title: "Contact Us",
@@ -202,7 +190,7 @@ export default function Header() {
 
           {/* Mobile Drawer Navigation */}
           {mobileMenuOpen && (
-            <div className="lg:hidden mt-3 pt-3 border-t border-gray-100 max-h-[80vh] overflow-y-auto">
+            <div className="lg:hidden mt-3 pt-3 border-t border-gray-100">
               <ul className="flex flex-col gap-1 pb-2">
                 {menuItems.map((item) => {
                   const hasSubmenu = item.subItems && item.subItems.length > 0;
@@ -224,17 +212,15 @@ export default function Header() {
 
                   return (
                     <li key={item.title} className="flex flex-col">
-                      <div className="flex items-center justify-between px-3 py-2.5 rounded hover:bg-gray-50">
-                        <Link
-                          href={item.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="text-[14px] font-bold text-gray-800 hover:text-[#dc2626] uppercase tracking-wider flex-grow"
-                        >
+                      <div 
+                        onClick={() => toggleMobileSubmenu(item.title)}
+                        className="flex items-center justify-between px-3 py-2.5 rounded hover:bg-gray-50 cursor-pointer"
+                      >
+                        <span className="text-[14px] font-bold text-gray-800 hover:text-[#dc2626] uppercase tracking-wider flex-grow">
                           {item.title}
-                        </Link>
+                        </span>
                         <button
                           type="button"
-                          onClick={() => toggleMobileSubmenu(item.title)}
                           className="p-2 text-gray-500 hover:text-[#dc2626]"
                           aria-label={`Toggle ${item.title} subcategories`}
                         >
