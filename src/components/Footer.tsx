@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ChevronsRight, ChevronRight, MapPin, Phone, Mail, ChevronUp } from "lucide-react";
 
@@ -145,13 +147,18 @@ export default function Footer({ companyDescription }: FooterProps) {
       </div>
 
       {/* Scroll to Top Button */}
-      <a 
-        href="#"
-        className="fixed bottom-6 left-6 w-[50px] h-[50px] bg-[#f27b13] hover:bg-[#d4680b] text-white rounded-md flex items-center justify-center shadow-lg z-50 transition-colors"
+      <button 
+        type="button"
+        onClick={() => {
+          if (typeof window !== "undefined") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }}
+        className="fixed bottom-6 left-6 w-[50px] h-[50px] bg-[#f27b13] hover:bg-[#d4680b] text-white rounded-md flex items-center justify-center shadow-lg z-50 transition-colors cursor-pointer"
         aria-label="Scroll to top"
       >
         <ChevronUp size={28} />
-      </a>
+      </button>
     </>
   );
 }

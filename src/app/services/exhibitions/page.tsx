@@ -55,37 +55,37 @@ export default function ExhibitionsPage() {
       title: "Exhibition Stall Design and 3D Visualisation",
       desc: "We develop stall concepts that reflect your brand, product display needs and exhibition objectives. Where required, 3D visualisation helps you review the proposed layout, visual elements and use of space before fabrication begins.",
       image: "/images/photo3.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Stall Fabrication and Production",
       desc: "We coordinate the production of stall structures, counters, display units and other agreed design elements, with attention to the approved concept, materials and event specifications.",
       image: "/images/photo6.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Installation and Dismantling",
       desc: "We coordinate the assembly and setup of the exhibition stall at the venue, followed by dismantling after the event according to the organiser's schedule and applicable venue requirements.",
       image: "/images/photo1.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Interactive Displays and Product Presentation",
       desc: "Where appropriate, we coordinate screens, demonstration areas, digital displays and other interactive elements that help visitors explore your products or services at the stall.",
       image: "/images/photo4.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Logistics and On-Site Project Management",
       desc: "We coordinate material movement, delivery schedules, setup requirements and on-site support within the agreed project scope, helping address practical issues as the exhibition approaches and during the event.",
       image: "/images/photo7.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Specialised Industry Exhibitions",
       desc: "We plan and manage exhibition presence across trade shows, consumer expos, technology and innovation exhibitions, industrial shows, food and agriculture expos, automotive shows and product showcases.",
       image: "/images/photo2.jpg",
-      link: "#",
+      link: "#contact",
     },
   ];
 

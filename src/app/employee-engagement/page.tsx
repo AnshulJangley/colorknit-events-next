@@ -69,7 +69,7 @@ export default function EmployeeEngagement() {
             </div>
             
             <Link 
-              href="#" 
+              href="/contact" 
               className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
             >
               <Phone size={16} fill="currentColor" />
@@ -157,7 +157,7 @@ export default function EmployeeEngagement() {
             </p>
             
             <Link 
-              href="#" 
+              href="/gallery" 
               className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
             >
               VIEW PICTURE GALLERY
@@ -197,7 +197,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo1.jpg" alt="Annual Parties" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/annual-day-gala-events" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Annual Parties
                 </Link>
@@ -208,7 +208,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo4.jpg" alt="Family Day Outings" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/family-day-outing" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Family Day Outings
                 </Link>
@@ -219,7 +219,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo3.jpg" alt="Town Hall & R&R" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/town-hall-rr" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Town Hall & R&R
                 </Link>
@@ -230,7 +230,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo5.jpg" alt="Team Offsite" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/corporate-events" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Team Offsite
                 </Link>
@@ -241,7 +241,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo6.jpg" alt="Team Building Programs" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/employee-engagement" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Team Building Programs
                 </Link>
@@ -252,7 +252,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo1.jpg" alt="Facility Launch Events" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/corporate-events" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Facility Launch Events
                 </Link>
@@ -263,7 +263,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo2.jpg" alt="Festival Decoration" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/employee-engagement" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Festival Decoration
                 </Link>
@@ -274,7 +274,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo4.jpg" alt="Milestone Celebration" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/corporate-events" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Milestone Celebration
                 </Link>
@@ -285,7 +285,7 @@ export default function EmployeeEngagement() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-sm mb-4">
                   <Image src="/images/photo3.jpg" alt="Corporate Parties" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
+                <Link href="/corporate-events" className="flex items-center gap-2 text-[#00a8a8] hover:text-[#008f8f] font-bold text-[16px] transition-colors tracking-wide">
                   <ArrowRightCircle size={18} strokeWidth={2.5} />
                   Corporate Parties
                 </Link>
@@ -298,7 +298,7 @@ export default function EmployeeEngagement() {
                 Let us help you design experiences that motivate, reward, and retain your team—professionally and passionately.
               </h4>
               <Link 
-                href="#" 
+                href="/contact" 
                 className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
               >
                 BOOK YOUR PROGRAM
@@ -458,7 +458,7 @@ export default function EmployeeEngagement() {
               </p>
 
               <Link 
-                href="#" 
+                href="/contact" 
                 className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-8 py-3.5 text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md rounded-[2px]"
               >
                 PLAN YOUR NEXT PROGRAM

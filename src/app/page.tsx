@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row items-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <Link 
-              href="#" 
+              href="/contact" 
               className="flex items-center gap-2 bg-[#1a1a1a] hover:bg-[#333333] border-[1.5px] border-transparent px-8 py-3 rounded-sm text-white text-[12px] font-bold tracking-wide transition-colors uppercase shadow-lg"
             >
               <MessageCircle size={16} fill="currentColor" />
@@ -311,7 +311,7 @@ export default function Home() {
           </div>
 
           <Link 
-            href="#" 
+            href="/contact" 
             className="inline-flex items-center gap-2 bg-[#1a1a1a] hover:bg-[#333333] text-white px-8 py-3.5 rounded-sm text-[13px] font-bold tracking-wider transition-colors uppercase shadow-md"
           >
             GET A CUSTOM QUOTE NOW
@@ -355,7 +355,7 @@ export default function Home() {
           </div>
 
           <Link 
-            href="#" 
+            href="/about" 
             className="inline-flex items-center gap-2 bg-[#00a8a8] hover:bg-[#008f8f] text-white px-6 py-2.5 rounded-sm text-[12px] font-bold tracking-wider transition-colors uppercase shadow-sm"
           >
             VIEW OUR CLIENTS LIST

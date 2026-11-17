@@ -60,37 +60,37 @@ export default function MicePage() {
       title: "Corporate Meetings & Business Meetings",
       desc: "We help businesses organise meetings that offer a professional and comfortable setting for productive discussions.",
       image: "/images/photo1.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "National & International Conferences",
       desc: "Whether planning a professional knowledge-sharing event or a large business conference, ColorKnit Events works around your programme, audience and organisational requirements.",
       image: "/images/photo2.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Corporate Exhibitions & Trade Shows",
       desc: "From business showcases to industry trade exhibitions, we help coordinate the arrangements that support your exhibition objectives.",
       image: "/images/photo6.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Dealer & Distributor Conferences",
       desc: "We plan seamless dealer and distributor events, making sure that they receive the best service and have a lasting impression about your brand and its products.",
       image: "/images/photo3.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Annual Sales Meetings",
       desc: "We help businesses create organised sales gatherings where important messages, team achievements and future plans receive the attention they deserve.",
       image: "/images/photo4.jpg",
-      link: "#",
+      link: "#contact",
     },
     {
       title: "Product Launch Conferences",
       desc: "From business presentations to product unveiling experiences, we help bring the different elements of your launch together.",
       image: "/images/photo5.jpg",
-      link: "#",
+      link: "#contact",
     },
   ];
 

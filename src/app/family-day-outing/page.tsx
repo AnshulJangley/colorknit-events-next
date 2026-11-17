@@ -278,7 +278,7 @@ export default function FamilyDayOutingPage() {
               </div>
               
               <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium max-w-[850px] mx-auto">
-                To make your family day event more amazing, we have a unique collection of fun games booths, customized &quot;play-to-win&quot; game stalls, and engagement activities. From inflatable games to gun shooting, toss-the-ball, tattoo corners, mechanical games, segways, zorbing, and quad bikes — we have many <Link href="#" className="text-[#008484] font-semibold hover:underline">funfair games & activities ideas</Link> to make your day more engaging.
+                To make your family day event more amazing, we have a unique collection of fun games booths, customized &quot;play-to-win&quot; game stalls, and engagement activities. From inflatable games to gun shooting, toss-the-ball, tattoo corners, mechanical games, segways, zorbing, and quad bikes — we have many <Link href="/gallery" className="text-[#008484] font-semibold hover:underline">funfair games & activities ideas</Link> to make your day more engaging.
               </p>
             </div>
 
@@ -348,7 +348,7 @@ export default function FamilyDayOutingPage() {
               
               <div className="text-[#555] text-[13.5px] leading-[1.8] font-medium max-w-[850px] mx-auto space-y-4">
                 <p>
-                  We offer a dynamic range of temporary structures — from big top tents to gaming zones, theme props, event furniture, main stage arenas, catering sheds, and everything required to transform your event space into a spectacular party zone. We have something to suit any style and size of event. With our experience, expertise, and <Link href="#" className="text-[#008484] font-semibold hover:underline">ideas to organize a family fun day event</Link>, we can plan a fun-filled and engaging <strong>family fun day event</strong> for your company.
+                  We offer a dynamic range of temporary structures — from big top tents to gaming zones, theme props, event furniture, main stage arenas, catering sheds, and everything required to transform your event space into a spectacular party zone. We have something to suit any style and size of event. With our experience, expertise, and <Link href="/contact" className="text-[#008484] font-semibold hover:underline">ideas to organize a family fun day event</Link>, we can plan a fun-filled and engaging <strong>family fun day event</strong> for your company.
                 </p>
               </div>
             </div>

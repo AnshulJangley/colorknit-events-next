@@ -9,7 +9,7 @@ interface GalleryGridProps {
   currentPage: number;
 }
 
-const TOTAL_PAGES = 6;
+const TOTAL_PAGES = 2;
 
 export default function GalleryGrid({ title, subtitle, headerContent, items, currentPage }: GalleryGridProps) {
   return (

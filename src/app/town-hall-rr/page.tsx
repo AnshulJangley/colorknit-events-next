@@ -165,7 +165,7 @@ export default function TownHallRRPage() {
               {/* CTA Button */}
               <div>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
                 >
                   START PLANNING YOUR TOWN HALL MEETING
@@ -186,14 +186,9 @@ export default function TownHallRRPage() {
                     { label: "Family Day Outing", href: "/family-day-outing" },
                     { label: "Annual Day & Gala Events", href: "/annual-day-gala-events" },
                     { label: "Town Hall and R&R", href: "/town-hall-rr" },
-                    { label: "Corporate Offsite Programs", href: "#" },
-                    { label: "Team Building Programs", href: "#" },
-                    { label: "Keynote Speakers", href: "#" },
-                    { label: "Inauguration Ceremonies", href: "#" },
-                    { label: "Corporate Gifting", href: "#" },
-                    { label: "Festive Decorations", href: "#" },
-                    { label: "Diwali Parties", href: "#" },
-                    { label: "Independence Day Decoration", href: "#" },
+                    { label: "Employee Engagement Programs", href: "/employee-engagement" },
+                    { label: "Corporate Gifting", href: "/services/corporate-gifting" },
+                    { label: "Event Photo Gallery", href: "/gallery" },
                   ].map((item) => (
                     <li key={item.label}>
                       <Link
@@ -215,15 +210,12 @@ export default function TownHallRRPage() {
                 </h3>
                 <ul className="flex flex-col gap-2">
                   {[
-                    { label: "Corporate Programs", href: "#" },
-                    { label: "Conferences Management", href: "#" },
-                    { label: "Dealer Meets & Summits", href: "#" },
-                    { label: "Product Launch Events", href: "#" },
-                    { label: "Gala Night Events", href: "#" },
-                    { label: "Award Nights", href: "#" },
-                    { label: "Virtual Events", href: "#" },
-                    { label: "Corporate Entertainment", href: "#" },
-                    { label: "BTL Activation", href: "#" },
+                    { label: "Corporate Event Management", href: "/corporate-events" },
+                    { label: "MICE & Conferences", href: "/services/mice" },
+                    { label: "Exhibitions & Stalls", href: "/services/exhibitions" },
+                    { label: "Sports Tournaments", href: "/services/sports" },
+                    { label: "Luxury Weddings", href: "/services/weddings" },
+                    { label: "All Corporate Services", href: "/services" },
                   ].map((item) => (
                     <li key={item.label}>
                       <Link

@@ -155,7 +155,7 @@ export default function GalleryPage2() {
                       Companies are increasingly moving beyond traditional engagement formats and embracing creative event concepts.
                     </p>
                     <p>
-                      From immersive entertainment zones and networking activities to branded engagement areas, <Link href="#" className="text-[#008484] font-semibold hover:underline">selfie point ideas</Link>, interactive photo booths, fun games, and themed experiences, businesses are creating engaging environments that strengthen employee relationships and workplace culture.
+                      From immersive entertainment zones and networking activities to branded engagement areas, <Link href="/gallery" className="text-[#008484] font-semibold hover:underline">selfie point ideas</Link>, interactive photo booths, fun games, and themed experiences, businesses are creating engaging environments that strengthen employee relationships and workplace culture.
                     </p>
                     <p>
                       Whether it is a company open house, employee celebration, annual party, family carnival, or leadership retreat, thoughtful event planning can significantly enhance employee participation, engagement, and emotional connection within the organization.
@@ -197,14 +197,9 @@ export default function GalleryPage2() {
                       { label: "Family Day Outing", href: "/family-day-outing" },
                       { label: "Annual Day & Gala Events", href: "/annual-day-gala-events" },
                       { label: "Town Hall and R&R", href: "/town-hall-rr" },
-                      { label: "Corporate Offsite Programs", href: "/corporate-offsite-programs" },
-                      { label: "Team Building Programs", href: "/team-building-programs" },
-                      { label: "Keynote Speakers", href: "/keynote-speakers" },
-                      { label: "Inauguration Ceremonies", href: "/inauguration-ceremonies" },
-                      { label: "Corporate Gifting", href: "/corporate-gifting" },
-                      { label: "Festival Decorations", href: "/festival-decorations" },
-                      { label: "Diwali Parties", href: "/diwali-parties" },
-                      { label: "Independence Day Decoration", href: "/independence-day-decoration" }
+                      { label: "Employee Engagement Programs", href: "/employee-engagement" },
+                      { label: "Corporate Gifting Solutions", href: "/services/corporate-gifting" },
+                      { label: "Event Photo Gallery", href: "/gallery" },
                     ].map((item, idx) => (
                       <li key={idx} className="border-b border-gray-100 last:border-0 py-3.5">
                         <Link href={item.href} className="flex items-center gap-3 text-[#555] hover:text-[#008484] transition-colors text-[13.5px] font-medium group">
@@ -219,19 +214,16 @@ export default function GalleryPage2() {
                 {/* Box 2 */}
                 <div className="bg-white p-8 shadow-[0_0_15px_rgba(0,0,0,0.05)] border border-gray-100">
                   <h3 className="text-[#008484] text-[16px] font-bold mb-6 leading-snug">
-                    Our Corporate Events
+                    Our Corporate Services
                   </h3>
                   <ul className="flex flex-col">
                     {[
-                      { label: "Corporate Programs", href: "/corporate-programs" },
-                      { label: "Conferences Management", href: "/conferences-management" },
-                      { label: "Dealer Meets & Summits", href: "/dealer-meets-summits" },
-                      { label: "Product Launch Events", href: "/product-launch-events" },
-                      { label: "Gala Night Events", href: "/gala-night-events" },
-                      { label: "Award Nights", href: "/award-nights" },
-                      { label: "Virtual Events", href: "/virtual-events" },
-                      { label: "Corporate Entertainment", href: "/corporate-entertainment" },
-                      { label: "BTL Activation", href: "/btl-activation" }
+                      { label: "Corporate Event Management", href: "/corporate-events" },
+                      { label: "MICE & Conferences", href: "/services/mice" },
+                      { label: "Exhibition Stall Design", href: "/services/exhibitions" },
+                      { label: "Sports Tournaments", href: "/services/sports" },
+                      { label: "Luxury Wedding Planning", href: "/services/weddings" },
+                      { label: "All Corporate Services", href: "/services" },
                     ].map((item, idx) => (
                       <li key={idx} className="border-b border-gray-100 last:border-0 py-3.5">
                         <Link href={item.href} className="flex items-center gap-3 text-[#555] hover:text-[#008484] transition-colors text-[13.5px] font-medium group">

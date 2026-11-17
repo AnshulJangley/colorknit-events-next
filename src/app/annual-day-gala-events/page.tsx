@@ -75,7 +75,7 @@ export default function AnnualDayGalaEventsPage() {
             </div>
             
             <Link 
-              href="#" 
+              href="/contact" 
               className="bg-[#00b4b4] hover:bg-[#009b9b] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm tracking-wider"
             >
               TALK TO YOUR EVENT PLANNER
@@ -217,7 +217,7 @@ export default function AnnualDayGalaEventsPage() {
 
             {/* CTA Button */}
             <Link 
-              href="#" 
+              href="/gallery" 
               className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-3.5 font-bold text-[13px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
             >
               VIEW ANNUAL DAY EVENTS GALLERY
@@ -238,7 +238,7 @@ export default function AnnualDayGalaEventsPage() {
             </p>
             
             <Link 
-              href="#" 
+              href="/contact" 
               className="inline-flex items-center gap-2 bg-[#00b4b4] hover:bg-[#009b9b] text-white px-6 py-3 font-bold text-[12px] uppercase transition-colors shadow-sm rounded-sm tracking-wider"
             >
               ASK FOR ANNUAL DAY QUOTE
@@ -274,7 +274,7 @@ export default function AnnualDayGalaEventsPage() {
                   <div>
                     <h4 className="text-[#008484] text-[16px] font-bold mb-3">Themes & Ideas</h4>
                     <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                      Transform your celebration with immersive themes like Casino Night, Bollywood, Retro, and Winter Wonderland. We craft creative details that turn standard gatherings into memorable experiences. Explore our dedicated page for <Link href="#" className="text-[#008484] hover:underline font-semibold">annual day themes & ideas</Link>.
+                      Transform your celebration with immersive themes like Casino Night, Bollywood, Retro, and Winter Wonderland. We craft creative details that turn standard gatherings into memorable experiences. Explore our dedicated page for <Link href="/gallery" className="text-[#008484] hover:underline font-semibold">annual day themes & ideas</Link>.
                     </p>
                   </div>
                 </div>
@@ -298,7 +298,7 @@ export default function AnnualDayGalaEventsPage() {
                   <div>
                     <h4 className="text-[#008484] text-[16px] font-bold mb-3">Event Entertainment</h4>
                     <p className="text-[#555] text-[13.5px] leading-[1.8] font-medium">
-                      With 18+ years in <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate event planning</Link>, we deliver the perfect entertainment lineup. As a premier <Link href="#" className="text-[#008484] hover:underline font-semibold">corporate entertainment</Link> provider, we seamlessly source and manage celebrity artists, <strong>live bands</strong>, Sufi groups, and top DJs for your <strong>annual day celebration</strong>.
+                      With 18+ years in <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">corporate event planning</Link>, we deliver the perfect entertainment lineup. As a premier <Link href="/corporate-events" className="text-[#008484] hover:underline font-semibold">corporate entertainment</Link> provider, we seamlessly source and manage celebrity artists, <strong>live bands</strong>, Sufi groups, and top DJs for your <strong>annual day celebration</strong>.
                     </p>
                   </div>
                 </div>
@@ -369,7 +369,7 @@ export default function AnnualDayGalaEventsPage() {
                 <div className="relative aspect-square w-full rounded-sm overflow-hidden border-[6px] border-white shadow-sm">
                   <Image src="/images/photo17.jpg" alt="Dhol Player" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
+                <Link href="/gallery" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
                   <ArrowRight size={14} />
                   <span className="underline underline-offset-2">Explore Annual Day Event Ideas</span>
                 </Link>
@@ -380,7 +380,7 @@ export default function AnnualDayGalaEventsPage() {
                 <div className="relative aspect-square w-full rounded-sm overflow-hidden border-[6px] border-white shadow-sm">
                   <Image src="/images/photo18.jpg" alt="Masquerade Masks" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
+                <Link href="/gallery" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
                   <ArrowRight size={14} />
                   <span className="underline underline-offset-2">Explore Annual Day Themes</span>
                 </Link>
@@ -391,7 +391,7 @@ export default function AnnualDayGalaEventsPage() {
                 <div className="relative aspect-square w-full rounded-sm overflow-hidden border-[6px] border-white shadow-sm">
                   <Image src="/images/photo19.jpg" alt="Photo Booth" fill className="object-cover" />
                 </div>
-                <Link href="#" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
+                <Link href="/gallery" className="flex items-center gap-1 text-[#444] hover:text-[#008484] text-[12px] font-medium transition-colors">
                   <ArrowRight size={14} />
                   <span className="underline underline-offset-2">Explore Photo Booth Ideas</span>
                 </Link>
@@ -409,7 +409,7 @@ export default function AnnualDayGalaEventsPage() {
                 EVENT MANAGEMENT FAQS
               </h2>
               <p className="text-[#666] text-[13px] md:text-[14px] font-medium">
-                Everything You Need To Know About Our <Link href="#" className="text-[#008484] hover:underline font-semibold">Event Management Services</Link>
+                Everything You Need To Know About Our <Link href="/services" className="text-[#008484] hover:underline font-semibold">Event Management Services</Link>
               </p>
             </div>
 

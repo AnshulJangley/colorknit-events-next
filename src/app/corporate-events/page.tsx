@@ -81,14 +81,14 @@ export default function CorporateEvents() {
       desc: "Bring your channel partners together for business updates, product discussions, sales planning and relationship-building. We coordinate the event format, venue, branding and programme flow around your objectives.",
       image: "/images/photo3.jpg",
       icon: Users,
-      link: "#",
+      link: "/contact",
     },
     {
       title: "Client Engagement Events",
       desc: "From professional gatherings to appreciation events, we help shape an environment that encourages interaction and strengthens business relationships.",
       image: "/images/photo1.jpg",
       icon: Sparkles,
-      link: "#",
+      link: "/contact",
     },
     {
       title: "Corporate Annual Events",
@@ -116,7 +116,7 @@ export default function CorporateEvents() {
       desc: "With coordinated and meticulously planned details we help introduce a product, service or business initiative through coordinated venue planning, stage setup, branding, audiovisual production and event-day coordination.",
       image: "/images/photo4.jpg",
       icon: Megaphone,
-      link: "#",
+      link: "/contact",
     },
   ];
 

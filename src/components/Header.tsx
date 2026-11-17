@@ -57,9 +57,8 @@ export default function Header() {
       title: "Our Work",
       href: "/gallery",
       subItems: [
-        { title: "Portfolio", href: "/portfolio" },
         { title: "Event Gallery", href: "/gallery" },
-        { title: "Event Videos", href: "/videos" },
+        { title: "HR & Engagement Gallery", href: "/gallery/page/2" },
       ],
     },
     {
