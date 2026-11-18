@@ -47,7 +47,7 @@ export default function Header() {
           <div className="max-w-[1400px] mx-auto flex items-center justify-between">
             {/* Left Tagline (Desktop) */}
             <div className="hidden sm:flex items-center gap-2 text-gray-300 text-[11px] tracking-wider uppercase">
-              <span>ColorKnit Events</span>
+              <span>ColorKnit</span>
             </div>
 
             {/* Right Quick Links & WhatsApp Button */}
