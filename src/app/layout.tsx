@@ -177,17 +177,25 @@ export default function RootLayout({
         <meta name="google-site-verification" content="MCBXfFfTX-5oW_kfXE08zPsd7vl0JROhLje2hEMv-lA" />
       </head>
       <body className="min-h-full flex flex-col overflow-x-hidden w-full max-w-full">
-        {/* Google tag (gtag.js) */}
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M3NWKVC4"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18556087773"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-M3NWKVC4"
         />
-        <Script id="google-tag-aw" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18556087773');
           `}
         </Script>
         {children}
