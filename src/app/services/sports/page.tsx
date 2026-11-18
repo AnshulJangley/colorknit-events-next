@@ -371,7 +371,7 @@ export default function SportsPage() {
               </Link>
 
               <Link
-                href="https://wa.me/919811121153?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20discuss%20a%20sports%20event."
+                href="https://wa.me/919271114024?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20discuss%20a%20sports%20event."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white font-bold text-[13px] px-8 py-4 rounded-[3px] uppercase tracking-wider transition-all"

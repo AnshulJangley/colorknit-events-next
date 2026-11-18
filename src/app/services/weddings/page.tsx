@@ -408,7 +408,7 @@ export default function WeddingsPage() {
                 <ArrowRight size={16} />
               </a>
               <a
-                href="https://wa.me/919922222222?text=Hello%20ColorKnit%20Weddings,%20I%20would%20like%20to%20inquire%20about%20wedding%20planning%20services."
+                href="https://wa.me/919271114024?text=Hello%20ColorKnit%20Weddings,%20I%20would%20like%20to%20inquire%20about%20wedding%20planning%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase shadow-md rounded-[3px]"

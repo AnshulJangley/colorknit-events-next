@@ -27,7 +27,7 @@ interface MenuItem {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const whatsappNumber = "919811121153";
+  const whatsappNumber = "919271114024";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20enquire%20about%20event%20planning.`;
 
   const menuItems: MenuItem[] = [
