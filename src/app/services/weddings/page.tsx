@@ -209,15 +209,13 @@ export default function WeddingsPage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="https://colorknitweddings.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase shadow-md rounded-[3px] hover:shadow-lg hover:-translate-y-0.5"
               >
                 Start Planning Your Wedding
                 <ArrowRight size={16} />
-              </a>
+              </Link>
               <Link
                 href="#services"
                 className="inline-flex items-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/40 hover:border-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase rounded-[3px]"
@@ -319,15 +317,13 @@ export default function WeddingsPage() {
                           {service.desc}
                         </p>
                       </div>
-                      <a
-                        href="https://colorknitweddings.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        href="/contact"
                         className="inline-flex items-center gap-1.5 text-[#008484] hover:text-[#006e6e] text-[12.5px] font-bold tracking-wide uppercase transition-colors"
                       >
                         Learn More
                         <ArrowRight size={13} />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 );
@@ -398,15 +394,13 @@ export default function WeddingsPage() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="https://colorknitweddings.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-4 text-[13px] font-bold tracking-wider transition-all uppercase shadow-md rounded-[3px] hover:shadow-lg hover:-translate-y-0.5"
               >
                 Start Planning Your Wedding
                 <ArrowRight size={16} />
-              </a>
+              </Link>
               <a
                 href="https://wa.me/919271114024?text=Hello%20ColorKnit%20Weddings,%20I%20would%20like%20to%20inquire%20about%20wedding%20planning%20services."
                 target="_blank"
