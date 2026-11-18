@@ -317,13 +317,15 @@ export default function WeddingsPage() {
                           {service.desc}
                         </p>
                       </div>
-                      <Link
-                        href="/contact"
+                      <a
+                        href="https://colorknitweddings.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-[#008484] hover:text-[#006e6e] text-[12.5px] font-bold tracking-wide uppercase transition-colors"
                       >
                         Learn More
                         <ArrowRight size={13} />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 );
