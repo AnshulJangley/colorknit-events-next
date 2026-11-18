@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 
 // Official WhatsApp Vector Icon
 function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -19,21 +19,42 @@ function WhatsAppIcon({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
-interface MenuItem {
-  title: string;
-  href: string;
-}
+const serviceDropdownItems = [
+  { title: "Corporate Event Management", href: "/corporate-events" },
+  { title: "Annual Day & Gala Events", href: "/annual-day-gala-events" },
+  { title: "Town Hall & R&R Events", href: "/town-hall-rr" },
+  { title: "Employee Engagement", href: "/employee-engagement" },
+  { title: "Family Day Outing", href: "/family-day-outing" },
+  { title: "Wedding Event Management", href: "/services/weddings" },
+  { title: "MICE & Conferences", href: "/services/mice" },
+  { title: "Exhibitions & Expos", href: "/services/exhibitions" },
+  { title: "Sports Events", href: "/services/sports" },
+  { title: "Corporate Gifting", href: "/services/corporate-gifting" },
+];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
   const whatsappNumber = "919271114024";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi%20ColorKnit%20Events%2C%20I%20would%20like%20to%20enquire%20about%20event%20planning.`;
 
-  const menuItems: MenuItem[] = [
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setServicesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const navLinks = [
     { title: "Home", href: "/" },
     { title: "About Us", href: "/about" },
-    { title: "Services", href: "/services" },
     { title: "Our Work", href: "/gallery" },
     { title: "Blog", href: "/blog" },
     { title: "Contact Us", href: "/contact" },
@@ -97,16 +118,90 @@ export default function Header() {
 
             {/* Desktop Navigation Links */}
             <ul className="hidden lg:flex items-center gap-7 text-[13.5px] font-bold tracking-wide text-gray-800">
-              {menuItems.map((item) => (
-                <li key={item.title}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                >
+                  About Us
+                </Link>
+              </li>
+
+              {/* Services Dropdown */}
+              <li className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setServicesOpen((prev) => !prev)}
+                  className="flex items-center gap-1 hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider font-bold text-[13.5px] text-gray-800"
+                  aria-haspopup="true"
+                  aria-expanded={servicesOpen}
+                >
+                  Services
+                  <ChevronDown
+                    size={15}
+                    className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {/* Dropdown Panel */}
+                {servicesOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-xl border border-gray-100 z-50 overflow-hidden">
+                    {/* View All Services link at top */}
+                    <Link
+                      href="/services"
+                      onClick={() => setServicesOpen(false)}
+                      className="block px-5 py-3 text-[11px] font-bold uppercase tracking-widest text-[#dc2626] border-b border-gray-100 hover:bg-red-50 transition-colors"
+                    >
+                      View All Services →
+                    </Link>
+                    <ul>
+                      {serviceDropdownItems.map((item) => (
+                        <li key={item.href}>
+                          <Link
+                            href={item.href}
+                            onClick={() => setServicesOpen(false)}
+                            className="block px-5 py-2.5 text-[13px] font-semibold text-gray-700 hover:text-[#dc2626] hover:bg-gray-50 transition-colors border-b border-gray-50 last:border-0"
+                          >
+                            {item.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <Link
+                  href="/gallery"
+                  className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                >
+                  Our Work
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
 
             {/* Mobile Header Controls: Hamburger Toggle */}
@@ -121,11 +216,11 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Drawer Navigation (No scroll, clean direct links) */}
+          {/* Mobile Drawer Navigation */}
           {mobileMenuOpen && (
             <div className="lg:hidden mt-3 pt-3 border-t border-gray-100">
               <ul className="flex flex-col gap-1 pb-2">
-                {menuItems.map((item) => (
+                {navLinks.map((item) => (
                   <li key={item.title}>
                     <Link
                       href={item.href}
@@ -136,6 +231,44 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+
+                {/* Mobile Services Accordion */}
+                <li>
+                  <button
+                    onClick={() => setMobileServicesOpen((prev) => !prev)}
+                    className="w-full flex items-center justify-between px-3 py-2.5 text-[14px] font-bold text-gray-800 hover:text-[#dc2626] hover:bg-gray-50 rounded uppercase tracking-wider"
+                  >
+                    Services
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {mobileServicesOpen && (
+                    <ul className="ml-4 mt-1 border-l-2 border-[#dc2626]/20 pl-3 flex flex-col gap-0.5">
+                      <li>
+                        <Link
+                          href="/services"
+                          onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false); }}
+                          className="block py-2 text-[13px] font-bold text-[#dc2626] uppercase tracking-wider"
+                        >
+                          View All Services
+                        </Link>
+                      </li>
+                      {serviceDropdownItems.map((item) => (
+                        <li key={item.href}>
+                          <Link
+                            href={item.href}
+                            onClick={() => { setMobileMenuOpen(false); setMobileServicesOpen(false); }}
+                            className="block py-2 text-[13px] font-semibold text-gray-700 hover:text-[#dc2626] transition-colors"
+                          >
+                            {item.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
               </ul>
             </div>
           )}
