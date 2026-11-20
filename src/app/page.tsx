@@ -57,15 +57,15 @@ export default function Home() {
       <Header />
       {/* Photo Grid */}
       <main className="w-full max-w-full overflow-x-hidden">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full">
+        <div className="grid grid-cols-4 w-full">
           {images.map((src, index) => (
-            <div key={index} className="relative w-full h-[300px] overflow-hidden group">
+            <div key={index} className="relative w-full aspect-square sm:aspect-auto sm:h-[220px] lg:h-[300px] overflow-hidden group">
               <Image 
                 src={src} 
                 alt={`Event Photo ${index + 1}`} 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                sizes="(max-width: 640px) 25vw, (max-width: 1024px) 25vw, 25vw"
                 priority={index < 4}
               />
             </div>
