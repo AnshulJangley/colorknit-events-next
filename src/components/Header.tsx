@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full max-w-full overflow-x-hidden">
+      <header className="w-full max-w-full">
         {/* Top Bar */}
         <div className="bg-[#170a1c] text-white text-[12px] font-medium py-2 px-4 border-b border-white/10">
           <div className="max-w-[1400px] mx-auto flex items-center justify-between">
@@ -81,27 +81,33 @@ export default function Header() {
                   className="flex items-center gap-1 hover:text-[#dc2626] transition-colors py-2 uppercase tracking-wider"
                 >
                   Services
-                  <ChevronDown size={14} className="transition-transform duration-200 group-hover:rotate-180" />
+                  <ChevronDown size={14} className="transition-transform duration-200 group-hover:rotate-180 text-gray-500 group-hover:text-[#dc2626]" />
                 </Link>
 
-                {/* Dropdown — visible on group hover */}
-                <div className="absolute top-full left-0 mt-0 w-[260px] bg-[#f5f5f5] shadow-xl rounded-b-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
-                  {/* Top accent line */}
-                  <div className="h-[3px] bg-[#dc2626] w-full rounded-t-sm"></div>
-                  <div className="py-2">
-                    {services.map((item) => (
+                {/* Dropdown — overlays cleanly on top of the website */}
+                <div className="absolute top-full -left-6 pt-2 w-[520px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto">
+                  <div className="bg-white rounded-b-xl shadow-2xl border border-gray-100 border-t-2 border-t-[#dc2626] p-5">
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                      {services.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="flex items-center gap-2 px-3 py-2 text-[13px] font-medium text-gray-700 hover:text-[#dc2626] hover:bg-red-50/50 rounded-md transition-colors"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626]/50 shrink-0"></span>
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="border-t border-gray-100 mt-4 pt-3 flex items-center justify-between px-3">
                       <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block px-6 py-3 text-[13.5px] font-medium text-gray-700 hover:text-[#dc2626] hover:bg-white transition-colors"
+                        href="/services"
+                        className="text-[12px] font-bold text-[#dc2626] uppercase tracking-wider hover:underline"
                       >
-                        {item.title}
+                        View All Event Services →
                       </Link>
-                    ))}
-                    <div className="border-t border-gray-200 mx-4 my-1"></div>
-                    <Link href="/services" className="block px-6 py-3 text-[12px] font-bold uppercase tracking-widest text-[#dc2626] hover:bg-white transition-colors">
-                      View All Services →
-                    </Link>
+                      <span className="text-[11px] text-gray-400 font-medium">Pan-India Corporate Events</span>
+                    </div>
                   </div>
                 </div>
               </li>
